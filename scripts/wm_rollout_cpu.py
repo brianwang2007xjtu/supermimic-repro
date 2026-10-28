@@ -10,6 +10,7 @@ imagines from a real state under the same motion.
 """
 from __future__ import annotations
 
+import os
 import sys
 import types
 from pathlib import Path
@@ -17,7 +18,9 @@ from pathlib import Path
 import numpy as np
 import torch
 
-REPO = Path("/Users/master/Desktop/supermimic-repro/SuperMimic-Reproduced")
+# Upstream implementation checkout (sibling directory by default).
+REPO = Path(__file__).resolve().parents[1] / "Supermimic-Reproduced"
+REPO = Path(os.environ.get("SUPERMIMIC_REPO", REPO))
 sys.path.insert(0, str(REPO / "src"))
 
 
@@ -201,7 +204,7 @@ def main():
     torch.manual_seed(0)
     device = "cpu"
 
-    ckpt_path = REPO.parent / "checkpoints_backup/ckpt_0044000.pt"
+    ckpt_path = Path(os.environ.get("SUPERMIMIC_CKPT", "ckpt_0044000.pt"))
     ck = torch.load(ckpt_path, map_location=device, weights_only=False)
     cfg = ck["config"]
 
@@ -233,7 +236,7 @@ def main():
     sim_qpos, sim_qvel = d["qpos"], d["qvel"]
     n_frames = min(horizon + t0, len(sim_qpos) - 11)
 
-    fk = AnchorFK(Path("g1/xmls/g1.xml"))
+    fk = AnchorFK(Path(os.environ.get("SUPERMIMIC_XML", "g1/xmls/g1.xml")))
 
     # ---- proxy reference features from the simulator trajectory
     def ref_state(qpos_row, qvel_row):
