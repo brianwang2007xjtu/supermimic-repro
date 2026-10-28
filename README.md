@@ -1,5 +1,7 @@
 # SuperMimic 复现：单卡 4090 上的 Unitree G1 全身动作跟踪
 
+**简体中文** | [English](README.en.md)
+
 复现 Liao et al., *SuperMimic: Scaling Humanoid Whole-Body Control with One Differentiable World Model*（CoRL 2026, [arXiv:2610.28480](https://arxiv.org/abs/2610.28480)）。方法用一个可微世界模型替代仿真器内的策略梯度：世界模型拟合 MuJoCo Warp 的转移，策略在想象轨迹上做短视野 BPTT。
 
 本仓库记录在单张 RTX 4090（24 GB）上复现该流程的代码、数据与评测结果。基础实现来自 [CuboiLeo/SuperMimic-Reproduced](https://github.com/CuboiLeo/SuperMimic-Reproduced)（论文口径实现），本仓库补充训练环境适配、离线渲染管线、世界模型推理与可视化工具。
