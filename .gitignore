@@ -3,6 +3,7 @@ logs/
 videos/
 *.pt
 *.npz
+!samples/**/*.npz
 __pycache__/
 .DS_Store
 .venv/

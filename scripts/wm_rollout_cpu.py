@@ -232,7 +232,8 @@ def main():
     xi = torch.zeros(1, 33)
     xi[0, 0] = 1.0  # nominal foot friction 1.0, zero encoder bias / COM offset
 
-    d = np.load(Path("rollouts") / f"{clip}.npz")
+    rollouts_dir = Path(os.environ.get("SUPERMIMIC_ROLLOUTS", "rollouts"))
+    d = np.load(rollouts_dir / f"{clip}.npz")
     sim_qpos, sim_qvel = d["qpos"], d["qvel"]
     n_frames = min(horizon + t0, len(sim_qpos) - 11)
 

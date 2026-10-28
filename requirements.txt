@@ -1,0 +1,8 @@
+# CPU-side scripts (rollout replay, rendering, world-model inference).
+numpy
+torch
+mujoco>=3.16
+imageio
+imageio-ffmpeg
+tyro
+tensorboard

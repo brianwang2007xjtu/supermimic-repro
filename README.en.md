@@ -30,61 +30,117 @@ Training uses the 40 LAFAN1 motions (2.45 hours). The final checkpoint is at 44,
 - **Training.** Each policy update performs BPTT over a 32-step imagined rollout, with a critic bootstrapping the return beyond the horizon. The world model is fitted every iteration on 8-step autoregressive windows.
 - **Evaluation.** Every motion is played deterministically from its first frame; the normalised return is the sum of step rewards divided by 0.1×steps, with 1.0 denoting perfect tracking.
 
-## Reproduction
+## Getting started
 
-The setup targets a single 24 GB GPU with Python 3.12, torch 2.14, MuJoCo 3.16 and MuJoCo Warp 3.16.
+### 1. Render videos (no GPU)
+
+The repository ships one example rollout (`samples/`) and the G1 model. With the dependencies installed, both videos take about half a minute.
 
 ```bash
-# 1. Base implementation
+git clone https://github.com/brianwang2007xjtu/supermimic-repro.git
+cd supermimic-repro
+pip install -r requirements.txt
+
+# Policy replay: solid robot plus the translucent reference
+python scripts/render_rollouts_mac.py \
+  --xml assets/g1/xmls/g1.xml \
+  --rollouts samples/rollouts --data samples/refs \
+  --out out --seconds 20
+
+# World-model trail: simulator plus the imagined future ghosts
+python scripts/render_wm_trail_mac.py \
+  --xml assets/g1/xmls/g1.xml \
+  --wm samples/wm_run2_500.npz \
+  --sim samples/rollouts/run2_subject4.npz \
+  --out out/wm_trail.mp4 --seconds 9
+```
+
+Rendering uses MuJoCo's offscreen renderer, which needs EGL on Windows and Linux and works directly on macOS. `assets/g1` comes from mjlab's asset zoo (Unitree G1 model, distributed with mjlab under the MIT licence).
+
+### 2. World-model inference (no GPU)
+
+The world model and the policy are MLPs; 500 autoregressive steps take about 2 s on CPU. This needs the model code from the base implementation and the checkpoint from the release.
+
+```bash
+git clone https://github.com/CuboiLeo/SuperMimic-Reproduced.git
+# download ckpt_0044000.pt from the release into this directory
+
+SUPERMIMIC_REPO=./SuperMimic-Reproduced \
+SUPERMIMIC_CKPT=./ckpt_0044000.pt \
+SUPERMIMIC_XML=assets/g1/xmls/g1.xml \
+SUPERMIMIC_ROLLOUTS=samples/rollouts \
+python scripts/wm_rollout_cpu.py run2_subject4 out/wm.npz 500 200
+```
+
+The positional arguments are the clip name, the output file, the number of imagined steps and the starting frame. The script writes the predicted qpos sequence and prints the mean joint error against the simulator.
+
+### 3. Train from scratch (NVIDIA GPU, at least 24 GB of memory)
+
+```bash
 git clone https://github.com/CuboiLeo/SuperMimic-Reproduced.git
 cd SuperMimic-Reproduced
 
-# 2. Environment (AutoDL image; detects the driver and picks the CUDA build)
-bash setup_autodl.sh
+# Environment: detects the driver, picks the CUDA build; see docs/autodl.md
+bash /path/to/supermimic-repro/scripts/setup_autodl.sh
 
-# 3. Data: 40 retargeted G1 motions from LAFAN1, converted to 50 Hz npz
-bash download_lafan1.sh
+# Data: 40 retargeted G1 motions from LAFAN1, converted to 50 Hz npz
+bash /path/to/supermimic-repro/scripts/download_lafan1.sh
 
-# 4. Training
+# Training
 env -u PYTHONPATH uv run sm-train --run-name lafan1_anchor \
   --data.npz-dir data/npz/lafan1 \
   --env.num-envs 2048 --policy-trainer.batch-size 2048 \
   --env.anchor-obs --schedule.max-hours 4.5
 
-# 5. Evaluation
+# Evaluation
 env -u PYTHONPATH uv run python scripts/eval_benchmark.py \
   --ckpt logs/lafan1_anchor/ckpt_latest.pt --npz-dir data/npz/lafan1
+
+# Export rollouts for rendering on a machine without a GPU
+env -u PYTHONPATH uv run python /path/to/supermimic-repro/scripts/dump_rollouts.py \
+  --ckpt logs/lafan1_anchor/ckpt_0044000.pt --npz-dir data/npz/lafan1 --out-dir rollouts
 ```
 
 `--env.anchor-obs` adds the anchor-relative pose to the goal. LAFAN1 motions last 100–270 s; a policy with proprioception only has no global pose feedback and drifts when a clip is played end to end. With the anchor observation the full-clip score exceeds 0.88. The paper's original observation set is unaffected on short clips such as BONES-SEED (median 5.8 s).
 
-## Visualisation
+## Scripts
 
-MuJoCo offscreen rendering requires EGL and DRM. Some cloud containers map only `/dev/nvidia*` and `/dev/nvidia-uvm`, without `/dev/dri` or `/dev/nvidia-caps`; in that case `mujoco.Renderer` fails with `Cannot initialize a EGL device display`, and neither `MUJOCO_GL=osmesa` nor Xvfb with GLFW yields a usable GL context. The pipeline therefore separates simulation from rendering:
+| Script | Purpose | GPU |
+| --- | --- | --- |
+| `scripts/setup_autodl.sh` | Install uv, select the torch build for the driver, fetch mjlab, `uv sync` | no |
+| `scripts/download_lafan1.sh` | Download LAFAN1 and convert to 50 Hz npz | no |
+| `scripts/dump_rollouts.py` | Replay the policy, export per-frame qpos/qvel and per-motion evaluation | yes |
+| `scripts/record_video.py` | Record policy videos directly on machines with working EGL | yes |
+| `scripts/render_rollouts_mac.py` | Offline render from exported states, with the reference ghost | no |
+| `scripts/render_wm_trail_mac.py` | Render the simulator and imagined-future trail | no |
+| `scripts/wm_rollout_cpu.py` | Autoregressive world-model inference on CPU | no |
+| `scripts/bench_all_ckpts.sh` | Benchmark every checkpoint on 4 fixed motions | yes |
+| `scripts/export_tb.py` | Export TensorBoard scalars to CSV | no |
+| `scripts/make_manifest.py` | Build the manifest used by the demo page | no |
 
-1. `scripts/dump_rollouts.py` replays the policy on the GPU and exports per-frame qpos/qvel together with per-motion evaluation;
-2. `scripts/render_rollouts_mac.py` renders videos on any machine with OpenGL (macOS included) from those states, matching the original renderer's scene and camera (checker floor, directional light, tracking camera, fovy 55);
-3. `scripts/render_wm_trail_mac.py` renders the side-by-side view of the simulator and the world model's predictions.
+## Rendering notes
+
+MuJoCo offscreen rendering requires EGL and DRM. Some cloud containers map only `/dev/nvidia*` and `/dev/nvidia-uvm`, without `/dev/dri` or `/dev/nvidia-caps`; in that case `mujoco.Renderer` fails with `Cannot initialize a EGL device display`, and neither `MUJOCO_GL=osmesa` nor Xvfb with GLFW yields a usable GL context. The pipeline therefore separates simulation from rendering: states are exported on the GPU and rendered on any machine with OpenGL.
 
 ![world model trail](assets/wm_trail.png)
 
 *Solid grey is MuJoCo; the blue trail is the world model's imagination rolled forward from the same state, sampled every 0.05 s.*
 
-World-model inference also runs offline: `scripts/wm_rollout_cpu.py` depends only on torch and MuJoCo and completes 500 imagined steps on CPU in about 2 s, with a mean joint error of 0.062 rad and a root drift of 0.11 m over those 500 steps.
-
 ## Data and weights
 
-- The final checkpoint (44,000 iterations, 206 MB) is attached to the GitHub release.
+- Final checkpoint (44,000 iterations, 206 MB): GitHub release asset.
 - Videos for all 40 motions and the interactive demo: <https://brianwang2007.com/posts/supermimic-repro/>
-- Per-motion evaluation and training curves are in [`results/`](results/).
+- Training curves, per-checkpoint benchmark, per-motion evaluation and the TensorBoard export: `results/`
 
 ## Repository layout
 
 ```
-scripts/    environment setup, data conversion, rollout export, offline rendering, world-model inference
-results/    training curves, per-checkpoint benchmark, per-motion evaluation, TensorBoard export
-assets/     figures
-docs/       environment notes for AutoDL
+scripts/          environment setup, data conversion, rollout export, offline rendering, inference, evaluation
+results/          training curves, per-checkpoint benchmark, per-motion evaluation, TensorBoard scalars
+samples/          example rollout, reference states and world-model prediction (run2_subject4)
+assets/           figures and the G1 model (from mjlab's asset zoo)
+docs/             environment notes for AutoDL
+requirements.txt  dependencies for the CPU-side scripts
 ```
 
 ## Training log
@@ -104,6 +160,12 @@ docs/       environment notes for AutoDL
 | 44,000 | 0.77 | 0.016 | 0.886 |
 
 The training return dips between 20,000 and 24,000 iterations while the imagined survival rate rises, which corresponds to the policy moving from staying alive to following the reference. The 8-step world-model error converges to about 0.016, above the 0.007–0.011 reported in the paper; the training budget here is 4.3 hours with 2,048 environments, both smaller than the paper's configuration.
+
+## About the author
+
+Brian Wang (王斐然) is an undergraduate in Artificial Intelligence at Xi'an Jiaotong University, entered through the 2023 Youth Class. His research interests include JEPA, world models and spatial intelligence. Blog: [brianwang2007.com](https://brianwang2007.com). GitHub: [@brianwang2007xjtu](https://github.com/brianwang2007xjtu).
+
+This repository archives the code and results of a personal reproduction project; questions and discussion are welcome through Issues.
 
 ## Citation
 
