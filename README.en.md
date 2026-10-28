@@ -161,12 +161,6 @@ requirements.txt  dependencies for the CPU-side scripts
 
 The training return dips between 20,000 and 24,000 iterations while the imagined survival rate rises, which corresponds to the policy moving from staying alive to following the reference. The 8-step world-model error converges to about 0.016, above the 0.007–0.011 reported in the paper; the training budget here is 4.3 hours with 2,048 environments, both smaller than the paper's configuration.
 
-## About the author
-
-Brian Wang (王斐然) is an undergraduate in Artificial Intelligence at Xi'an Jiaotong University, entered through the 2023 Youth Class. His research interests include JEPA, world models and spatial intelligence. Blog: [brianwang2007.com](https://brianwang2007.com). GitHub: [@brianwang2007xjtu](https://github.com/brianwang2007xjtu).
-
-This repository archives the code and results of a personal reproduction project; questions and discussion are welcome through Issues.
-
 ## Citation
 
 ```bibtex
