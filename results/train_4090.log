@@ -1,0 +1,780 @@
+/root/autodl-tmp/SuperMimic-Reproduced/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Setting seed: 0
+Warp 1.15.0 initialized:
+   CUDA Toolkit 12.9, Driver 12.8
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA GeForce RTX 4090" (24 GiB, sm_89, mempool enabled)
+   Kernel cache:
+     /root/.cache/warp/1.15.0
+Module mujoco_warp._src.smooth 95df6f0 load on device 'cuda:0' took 1.09 ms  (cached)
+Module _nxn_broadphase__locals__kernel_b687671b b687671 load on device 'cuda:0' took 0.40 ms  (cached)
+Module _nxn_broadphase__locals__kernel_b687671b b32f394 load on device 'cuda:0' took 0.32 ms  (cached)
+Module _primitive_narrowphase__locals__primitive_narrowphase_caf3ee7d caf3ee7 load on device 'cuda:0' took 0.49 ms  (cached)
+Module mujoco_warp._src.constraint 5b5fe2d load on device 'cuda:0' took 0.33 ms  (cached)
+Module _friction_dof__locals__kernel_e7ca8742 e7ca874 load on device 'cuda:0' took 0.37 ms  (cached)
+Module _limit_slide_hinge__locals__kernel_e5c7e795 e5c7e79 load on device 'cuda:0' took 0.35 ms  (cached)
+Module _efc_contact_init__locals__kernel_e4a070ae e4a070a load on device 'cuda:0' took 0.31 ms  (cached)
+Module _efc_contact_jac_sparse__locals__kernel_1795f6f1 1795f6f load on device 'cuda:0' took 0.31 ms  (cached)
+Module _efc_contact_update__locals__kernel_de3ff5ac de3ff5a load on device 'cuda:0' took 0.31 ms  (cached)
+Module mujoco_warp._src.sensor 9a8e696 load on device 'cuda:0' took 0.71 ms  (cached)
+Module mujoco_warp._src.forward 62e76d6 load on device 'cuda:0' took 0.60 ms  (cached)
+Module mujoco_warp._src.passive 5924789 load on device 'cuda:0' took 0.64 ms  (cached)
+Module _qfrc_passive_kernel__locals__kernel_f27fbaf1 f27fbaf load on device 'cuda:0' took 0.31 ms  (cached)
+Module _qfrc_smooth__locals__kernel_3ac7164a 3ac7164 load on device 'cuda:0' took 0.31 ms  (cached)
+Module mujoco_warp._src.support 9cbd1f3 load on device 'cuda:0' took 0.31 ms  (cached)
+Module _tile_cholesky_factorize_solve_block__locals__kernel_6a90e1e3 40a293f load on device 'cuda:0' took 30.50 ms  (cached)
+Module _solve_init_dof__locals__kernel_6118f3bb 6118f3b load on device 'cuda:0' took 0.39 ms  (cached)
+Module mujoco_warp._src.solver c0e8e04 load on device 'cuda:0' took 0.46 ms  (cached)
+Module _solve_init_jaref_kernel__locals__kernel_d8e4566a d8e4566 load on device 'cuda:0' took 0.36 ms  (cached)
+Module mul_m_kernel__locals___mul_m_c35c98ef c35c98e load on device 'cuda:0' took 0.32 ms  (cached)
+Module _update_constraint_efc__locals__kernel_e07974dd e07974d load on device 'cuda:0' took 0.33 ms  (cached)
+Module _update_constraint_init_qfrc_constraint_sparse__locals__kernel_fbee65e8 fbee65e load on device 'cuda:0' took 0.31 ms  (cached)
+Module _update_gradient_zero_grad_dot__locals__kernel_0f20ff67 0f20ff6 load on device 'cuda:0' took 0.31 ms  (cached)
+Module _update_gradient_grad__locals__kernel_e4d921e8 e4d921e load on device 'cuda:0' took 0.31 ms  (cached)
+Module _update_gradient_init_h_sparse__locals__kernel_94187b0c 94187b0 load on device 'cuda:0' took 0.32 ms  (cached)
+Module _JTDACJ_sparse__locals__kernel_624e6065 624e606 load on device 'cuda:0' took 0.34 ms  (cached)
+Module _update_gradient_cholesky_blocked__locals__kernel_aa5d2263 874b575 load on device 'cuda:0' took 71.12 ms  (cached)
+Module _linesearch_jv_fused_kernel__locals__kernel_add99e12 add99e1 load on device 'cuda:0' took 0.38 ms  (cached)
+Module _linesearch_iterative_kernel__locals__kernel_d239c9bb 2eb10f4 load on device 'cuda:0' took 0.46 ms  (cached)
+Module _update_constraint_efc__locals__kernel_a5b45bc9 a5b45bc load on device 'cuda:0' took 0.36 ms  (cached)
+Module _update_gradient_zero_grad_dot__locals__kernel_8f7fc847 8f7fc84 load on device 'cuda:0' took 0.33 ms  (cached)
+Module _update_gradient_grad__locals__kernel_4e5443c9 4e5443c load on device 'cuda:0' took 0.32 ms  (cached)
+Module _update_gradient_h_incremental_sparse__locals__kernel_fb322942 fb32294 load on device 'cuda:0' took 0.33 ms  (cached)
+Module _update_gradient_cholesky_blocked_skip_unchanged__locals__kernel_cb2f79a0 3732949 load on device 'cuda:0' took 77.45 ms  (cached)
+Module _solve_done__locals__kernel_7ed9200b 7ed9200 load on device 'cuda:0' took 0.41 ms  (cached)
+Module mujoco_warp._src.derivative d0bb202 load on device 'cuda:0' took 0.74 ms  (cached)
+Module _next_time_builder__locals___next_time_25ac9f63 25ac9f6 load on device 'cuda:0' took 0.34 ms  (cached)
+Module reset_data__locals__reset_xfrc_applied_9b78dd42 9b78dd4 load on device 'cuda:0' took 0.40 ms  (cached)
+Module reset_data__locals__reset_M_ee95535e ee95535 load on device 'cuda:0' took 0.31 ms  (cached)
+Module reset_data__locals__reset_mocap_dbaba115 dbaba11 load on device 'cuda:0' took 0.30 ms  (cached)
+Module reset_data__locals__reset_contact_9b7e935c 9b7e935 load on device 'cuda:0' took 0.29 ms  (cached)
+Module reset_data__locals__reset_sleep_2842a269 2842a26 load on device 'cuda:0' took 0.30 ms  (cached)
+Module reset_data__locals__reset_nworld_11568891 1156889 load on device 'cuda:0' took 0.32 ms  (cached)
+
++---------------------------------+
+|         Base Environment        |
++------------------------+--------+
+| Property               | Value  |
++------------------------+--------+
+| Number of environments | 2048   |
+| Environment device     | cuda:0 |
+| Environment seed       | 0      |
+| Physics step-size      | 0.005  |
+| Environment step-size  | 0.02   |
++------------------------+--------+
+
+[INFO] <EventManager> contains 2 active terms.
++---------------------------------------+
+| Active Event Terms in Mode: 'startup' |
++---------------+-----------------------+
+|     Index     | Name                  |
++---------------+-----------------------+
+|       0       | base_com              |
++---------------+-----------------------+
++-------------------------------------+
+| Active Event Terms in Mode: 'reset' |
++----------+--------------------------+
+|  Index   | Name                     |
++----------+--------------------------+
+|    0     | encoder_bias             |
+|    1     | foot_friction            |
++----------+--------------------------+
++-----------------------------+
+| Domain Randomization Fields |
++-------+---------------------+
+| Index | Field Name          |
++-------+---------------------+
+|   0   | body_ipos           |
+|   1   | body_subtreemass    |
+|   2   | dof_invweight0      |
+|   3   | body_invweight0     |
+|   4   | tendon_length0      |
+|   5   | tendon_invweight0   |
+|   6   | actuator_acc0       |
+|   7   | geom_friction       |
++-------+---------------------+
+
+Module repeat_array_kernel_f3ffbc3f f56645b load on device 'cuda:0' took 0.43 ms  (cached)
+Module repeat_array_kernel_f3ffbc3f 43f7a6f load on device 'cuda:0' took 0.38 ms  (cached)
+Module repeat_array_kernel_f3ffbc3f a5b1dbd load on device 'cuda:0' took 0.36 ms  (cached)
+[INFO] MotionLibrary(full): 40 clips, 441140 frames (2.451 h @50Hz), 8842 bins, 0.57 GB on cuda:0
+[INFO] <CommandManager> contains 1 active terms.
++-----------------------------------------+
+|           Active Command Terms          |
++-------+--------+------------------------+
+| Index | Name   |          Type          |
++-------+--------+------------------------+
+|   0   | motion | MultiClipMotionCommand |
++-------+--------+------------------------+
+
+[INFO] <ActionManager> contains 1 active terms.
++---------------------------------+
+| Active Action Terms (shape: 29) |
++-------+-----------+-------------+
+| Index | Name      |   Dimension |
++-------+-----------+-------------+
+|   0   | joint_pos |          29 |
++-------+-----------+-------------+
+
+[INFO] <ObservationManager> contains 2 groups.
++-------------------------------------------------------------+
+| Active Observation Terms in Group: 'policy' (shape: (930,)) |
++--------+------------------------+---------------------------+
+| Index  | Name                   |           Shape           |
++--------+------------------------+---------------------------+
+|   0    | joint_pos              |     (290,)  ← 10×(29,)    |
+|   1    | joint_vel              |     (290,)  ← 10×(29,)    |
+|   2    | base_ang_vel           |      (30,)  ← 10×(3,)     |
+|   3    | projected_gravity      |      (30,)  ← 10×(3,)     |
+|   4    | actions                |     (290,)  ← 10×(29,)    |
++--------+------------------------+---------------------------+
++-----------------------------------------------------------+
+| Active Observation Terms in Group: 'goal' (shape: (689,)) |
++------------+-----------------------------+----------------+
+|   Index    | Name                        |     Shape      |
++------------+-----------------------------+----------------+
+|     0      | future_frames               |     (680,)     |
+|     1      | anchor_pos                  |      (3,)      |
+|     2      | anchor_ori                  |      (6,)      |
++------------+-----------------------------+----------------+
+
+[INFO] <TerminationManager> contains 4 active terms.
++--------------------------------+
+|    Active Termination Terms    |
++-------+-------------+----------+
+| Index | Name        | Time Out |
++-------+-------------+----------+
+|   0   | time_out    |   True   |
+|   1   | clip_end    |   True   |
+|   2   | root_height |  False   |
+|   3   | root_tilt   |  False   |
++-------+-------------+----------+
+
+[INFO] <RewardManager> contains 8 active terms.
++-----------------------------------------+
+|           Active Reward Terms           |
++-------+------------------------+--------+
+| Index | Name                   | Weight |
++-------+------------------------+--------+
+|   0   | motion_global_root_pos |    0.5 |
+|   1   | motion_global_root_ori |    0.5 |
+|   2   | motion_body_pos        |    1.0 |
+|   3   | motion_body_ori        |    1.0 |
+|   4   | motion_body_lin_vel    |    1.0 |
+|   5   | motion_body_ang_vel    |    1.0 |
+|   6   | action_rate_l2         |   -0.1 |
+|   7   | joint_limit            |   -2.0 |
++-------+------------------------+--------+
+
+[INFO] <NullCurriculumManager> (inactive)
+[INFO] <NullMetricsManager> (inactive)
+[INFO] <RecorderManager> contains 1 active terms.
++-----------------------+
+| Active Recorder Terms |
++----------+------------+
+|  Index   |    Name    |
++----------+------------+
+|    0     |   replay   |
++----------+------------+
+Module mujoco_warp._src.set_const 946f642 load on device 'cuda:0' took 0.58 ms  (cached)
+Module _tile_cholesky_factorize_block__locals__kernel_19fc5f1b 2df9bf3 load on device 'cuda:0' took 20.76 ms  (cached)
+Module _tile_cholesky_solve_block__locals__kernel_c8336212 4cdd7dc load on device 'cuda:0' took 21.59 ms  (cached)
+[INFO] params: world model 8.82M, policy 8.91M, critic 0.237M
+[INFO] resumed from logs/lafan1_anchor/ckpt_latest.pt at iteration 16000
+it 16050 | 0.12 h | 0.1 it/s | updates 6388 | train_ret 0.607 (n=1898) | wm nse1 0.0288 nse8 0.0545 | imag_ret 2.198 surv 0.976 | t sim/wm/pi 2.5/32.7/401.5s
+it 16100 | 0.13 h | 1.8 it/s | updates 6408 | train_ret 0.587 (n=170) | wm nse1 0.0199 nse8 0.0272 | imag_ret 2.224 surv 0.984 | t sim/wm/pi 1.2/9.1/17.6s
+it 16150 | 0.14 h | 2.0 it/s | updates 6428 | train_ret 0.620 (n=39) | wm nse1 0.0149 nse8 0.0267 | imag_ret 2.271 surv 0.991 | t sim/wm/pi 1.0/9.1/14.9s
+it 16200 | 0.14 h | 2.1 it/s | updates 6448 | train_ret 0.611 (n=33) | wm nse1 0.0130 nse8 0.0219 | imag_ret 2.299 surv 0.993 | t sim/wm/pi 1.1/9.0/13.8s
+it 16250 | 0.15 h | 1.9 it/s | updates 6468 | train_ret 0.524 (n=16) | wm nse1 0.0123 nse8 0.0234 | imag_ret 2.316 surv 0.995 | t sim/wm/pi 0.9/9.2/15.6s
+it 16300 | 0.16 h | 1.9 it/s | updates 6488 | train_ret 0.661 (n=24) | wm nse1 0.0116 nse8 0.0209 | imag_ret 2.328 surv 0.996 | t sim/wm/pi 1.0/9.2/15.7s
+it 16350 | 0.16 h | 1.9 it/s | updates 6508 | train_ret 0.590 (n=34) | wm nse1 0.0113 nse8 0.0200 | imag_ret 2.338 surv 0.996 | t sim/wm/pi 1.1/9.1/15.7s
+it 16400 | 0.17 h | 2.1 it/s | updates 6528 | train_ret 0.638 (n=34) | wm nse1 0.0112 nse8 0.0189 | imag_ret 2.346 surv 0.996 | t sim/wm/pi 1.0/8.6/13.9s
+it 16450 | 0.18 h | 2.0 it/s | updates 6548 | train_ret 0.671 (n=67) | wm nse1 0.0110 nse8 0.0210 | imag_ret 2.348 surv 0.996 | t sim/wm/pi 1.1/9.0/15.4s
+it 16500 | 0.19 h | 2.0 it/s | updates 6568 | train_ret 0.715 (n=1024) | wm nse1 0.0110 nse8 0.0207 | imag_ret 2.350 surv 0.996 | t sim/wm/pi 1.2/9.1/15.3s
+it 16550 | 0.19 h | 2.0 it/s | updates 6588 | train_ret 0.650 (n=2399) | wm nse1 0.0111 nse8 0.0225 | imag_ret 2.357 surv 0.996 | t sim/wm/pi 1.2/9.0/15.1s
+it 16600 | 0.20 h | 2.0 it/s | updates 6608 | train_ret 0.635 (n=395) | wm nse1 0.0116 nse8 0.0257 | imag_ret 2.359 surv 0.995 | t sim/wm/pi 1.3/9.1/14.3s
+it 16650 | 0.21 h | 1.9 it/s | updates 6628 | train_ret 0.609 (n=104) | wm nse1 0.0117 nse8 0.0224 | imag_ret 2.358 surv 0.996 | t sim/wm/pi 1.3/9.2/15.7s
+it 16700 | 0.21 h | 1.9 it/s | updates 6648 | train_ret 0.645 (n=64) | wm nse1 0.0115 nse8 0.0213 | imag_ret 2.359 surv 0.995 | t sim/wm/pi 1.2/9.0/16.1s
+it 16750 | 0.22 h | 2.0 it/s | updates 6668 | train_ret 0.682 (n=61) | wm nse1 0.0113 nse8 0.0200 | imag_ret 2.371 surv 0.996 | t sim/wm/pi 1.2/9.5/14.0s
+it 16800 | 0.23 h | 1.9 it/s | updates 6688 | train_ret 0.583 (n=50) | wm nse1 0.0112 nse8 0.0239 | imag_ret 2.369 surv 0.996 | t sim/wm/pi 1.1/9.5/15.7s
+it 16850 | 0.24 h | 1.9 it/s | updates 6708 | train_ret 0.704 (n=59) | wm nse1 0.0112 nse8 0.0212 | imag_ret 2.369 surv 0.997 | t sim/wm/pi 1.2/9.2/16.0s
+it 16900 | 0.24 h | 1.9 it/s | updates 6728 | train_ret 0.642 (n=72) | wm nse1 0.0111 nse8 0.0210 | imag_ret 2.371 surv 0.997 | t sim/wm/pi 1.2/9.0/16.2s
+it 16950 | 0.25 h | 2.0 it/s | updates 6748 | train_ret 0.696 (n=67) | wm nse1 0.0110 nse8 0.0220 | imag_ret 2.378 surv 0.997 | t sim/wm/pi 1.1/9.6/14.3s
+it 17000 | 0.26 h | 1.8 it/s | updates 6768 | train_ret 0.713 (n=542) | wm nse1 0.0111 nse8 0.0189 | imag_ret 2.378 surv 0.996 | t sim/wm/pi 1.3/9.5/16.3s
+it 17050 | 0.26 h | 1.9 it/s | updates 6788 | train_ret 0.665 (n=2326) | wm nse1 0.0109 nse8 0.0235 | imag_ret 2.399 surv 0.997 | t sim/wm/pi 1.3/9.0/16.5s
+it 17100 | 0.27 h | 1.8 it/s | updates 6808 | train_ret 0.646 (n=733) | wm nse1 0.0111 nse8 0.0212 | imag_ret 2.394 surv 0.997 | t sim/wm/pi 1.3/9.1/16.7s
+it 17150 | 0.28 h | 2.0 it/s | updates 6828 | train_ret 0.661 (n=190) | wm nse1 0.0112 nse8 0.0225 | imag_ret 2.393 surv 0.996 | t sim/wm/pi 1.3/9.5/14.6s
+it 17200 | 0.29 h | 2.0 it/s | updates 6848 | train_ret 0.621 (n=98) | wm nse1 0.0113 nse8 0.0215 | imag_ret 2.390 surv 0.996 | t sim/wm/pi 1.2/8.4/15.8s
+it 17250 | 0.29 h | 1.9 it/s | updates 6868 | train_ret 0.652 (n=88) | wm nse1 0.0112 nse8 0.0208 | imag_ret 2.391 surv 0.996 | t sim/wm/pi 1.2/8.9/16.0s
+it 17300 | 0.30 h | 1.9 it/s | updates 6888 | train_ret 0.660 (n=62) | wm nse1 0.0114 nse8 0.0264 | imag_ret 2.396 surv 0.996 | t sim/wm/pi 1.1/9.1/16.2s
+it 17350 | 0.31 h | 2.0 it/s | updates 6908 | train_ret 0.702 (n=75) | wm nse1 0.0112 nse8 0.0238 | imag_ret 2.405 surv 0.996 | t sim/wm/pi 1.2/9.0/14.7s
+it 17400 | 0.31 h | 1.9 it/s | updates 6928 | train_ret 0.682 (n=75) | wm nse1 0.0111 nse8 0.0234 | imag_ret 2.409 surv 0.996 | t sim/wm/pi 1.2/9.2/16.2s
+it 17450 | 0.32 h | 1.9 it/s | updates 6948 | train_ret 0.651 (n=112) | wm nse1 0.0111 nse8 0.0220 | imag_ret 2.403 surv 0.996 | t sim/wm/pi 1.2/9.5/15.9s
+it 17500 | 0.33 h | 2.0 it/s | updates 6968 | train_ret 0.711 (n=364) | wm nse1 0.0111 nse8 0.0208 | imag_ret 2.399 surv 0.997 | t sim/wm/pi 1.3/9.6/14.5s
+it 17550 | 0.34 h | 1.9 it/s | updates 6988 | train_ret 0.681 (n=2081) | wm nse1 0.0111 nse8 0.0205 | imag_ret 2.404 surv 0.997 | t sim/wm/pi 1.3/9.5/15.8s
+it 17600 | 0.34 h | 1.9 it/s | updates 7008 | train_ret 0.663 (n=853) | wm nse1 0.0114 nse8 0.0209 | imag_ret 2.409 surv 0.997 | t sim/wm/pi 1.3/9.3/16.1s
+it 17650 | 0.35 h | 1.9 it/s | updates 7028 | train_ret 0.644 (n=287) | wm nse1 0.0112 nse8 0.0230 | imag_ret 2.407 surv 0.996 | t sim/wm/pi 1.3/8.7/16.5s
+it 17700 | 0.36 h | 2.0 it/s | updates 7048 | train_ret 0.683 (n=145) | wm nse1 0.0114 nse8 0.0223 | imag_ret 2.408 surv 0.996 | t sim/wm/pi 1.3/9.2/14.9s
+it 17750 | 0.37 h | 1.9 it/s | updates 7068 | train_ret 0.655 (n=111) | wm nse1 0.0113 nse8 0.0257 | imag_ret 2.403 surv 0.996 | t sim/wm/pi 1.2/9.4/16.1s
+it 17800 | 0.37 h | 1.9 it/s | updates 7088 | train_ret 0.675 (n=84) | wm nse1 0.0113 nse8 0.0223 | imag_ret 2.404 surv 0.996 | t sim/wm/pi 1.2/9.0/16.3s
+it 17850 | 0.38 h | 1.9 it/s | updates 7108 | train_ret 0.677 (n=101) | wm nse1 0.0115 nse8 0.0207 | imag_ret 2.415 surv 0.996 | t sim/wm/pi 1.3/9.0/16.3s
+it 17900 | 0.39 h | 1.9 it/s | updates 7128 | train_ret 0.685 (n=89) | wm nse1 0.0114 nse8 0.0222 | imag_ret 2.410 surv 0.996 | t sim/wm/pi 1.2/9.3/15.4s
+it 17950 | 0.40 h | 1.9 it/s | updates 7148 | train_ret 0.697 (n=139) | wm nse1 0.0114 nse8 0.0223 | imag_ret 2.415 surv 0.996 | t sim/wm/pi 1.3/9.5/16.0s
+it 18000 | 0.40 h | 1.9 it/s | updates 7168 | train_ret 0.696 (n=239) | wm nse1 0.0113 nse8 0.0224 | imag_ret 2.414 surv 0.996 | t sim/wm/pi 1.2/9.6/15.8s
+it 18050 | 0.41 h | 1.9 it/s | updates 7188 | train_ret 0.690 (n=1694) | wm nse1 0.0111 nse8 0.0235 | imag_ret 2.419 surv 0.996 | t sim/wm/pi 1.3/9.6/15.9s
+it 18100 | 0.42 h | 2.0 it/s | updates 7208 | train_ret 0.671 (n=1080) | wm nse1 0.0112 nse8 0.0195 | imag_ret 2.416 surv 0.996 | t sim/wm/pi 1.3/9.2/14.8s
+it 18150 | 0.42 h | 1.9 it/s | updates 7228 | train_ret 0.677 (n=414) | wm nse1 0.0113 nse8 0.0225 | imag_ret 2.419 surv 0.996 | t sim/wm/pi 1.3/9.3/16.3s
+it 18200 | 0.43 h | 1.9 it/s | updates 7248 | train_ret 0.669 (n=179) | wm nse1 0.0113 nse8 0.0307 | imag_ret 2.421 surv 0.996 | t sim/wm/pi 1.2/9.2/15.8s
+it 18250 | 0.44 h | 1.9 it/s | updates 7268 | train_ret 0.645 (n=139) | wm nse1 0.0111 nse8 0.0229 | imag_ret 2.418 surv 0.996 | t sim/wm/pi 1.2/8.6/15.8s
+it 18300 | 0.45 h | 2.0 it/s | updates 7288 | train_ret 0.662 (n=134) | wm nse1 0.0112 nse8 0.0209 | imag_ret 2.414 surv 0.996 | t sim/wm/pi 1.2/9.5/14.4s
+it 18350 | 0.45 h | 1.9 it/s | updates 7308 | train_ret 0.668 (n=119) | wm nse1 0.0113 nse8 0.0217 | imag_ret 2.425 surv 0.997 | t sim/wm/pi 1.2/9.4/16.1s
+it 18400 | 0.46 h | 1.8 it/s | updates 7328 | train_ret 0.691 (n=107) | wm nse1 0.0114 nse8 0.0277 | imag_ret 2.423 surv 0.996 | t sim/wm/pi 1.3/9.5/16.5s
+it 18450 | 0.47 h | 2.0 it/s | updates 7348 | train_ret 0.672 (n=142) | wm nse1 0.0112 nse8 0.0205 | imag_ret 2.420 surv 0.996 | t sim/wm/pi 1.3/9.4/14.8s
+it 18500 | 0.48 h | 1.8 it/s | updates 7368 | train_ret 0.693 (n=188) | wm nse1 0.0114 nse8 0.0223 | imag_ret 2.422 surv 0.997 | t sim/wm/pi 1.3/9.3/16.4s
+it 18550 | 0.48 h | 1.9 it/s | updates 7388 | train_ret 0.696 (n=1389) | wm nse1 0.0112 nse8 0.0211 | imag_ret 2.424 surv 0.996 | t sim/wm/pi 1.3/9.0/16.1s
+it 18600 | 0.49 h | 1.9 it/s | updates 7408 | train_ret 0.682 (n=1097) | wm nse1 0.0113 nse8 0.0231 | imag_ret 2.427 surv 0.996 | t sim/wm/pi 1.3/9.6/16.0s
+it 18650 | 0.50 h | 1.9 it/s | updates 7428 | train_ret 0.663 (n=539) | wm nse1 0.0115 nse8 0.0222 | imag_ret 2.426 surv 0.997 | t sim/wm/pi 1.3/9.2/15.4s
+it 18700 | 0.51 h | 1.9 it/s | updates 7448 | train_ret 0.680 (n=255) | wm nse1 0.0116 nse8 0.0224 | imag_ret 2.431 surv 0.997 | t sim/wm/pi 1.3/9.0/16.1s
+it 18750 | 0.51 h | 1.9 it/s | updates 7468 | train_ret 0.665 (n=170) | wm nse1 0.0114 nse8 0.0206 | imag_ret 2.434 surv 0.996 | t sim/wm/pi 1.3/9.2/15.8s
+it 18800 | 0.52 h | 1.9 it/s | updates 7488 | train_ret 0.693 (n=169) | wm nse1 0.0114 nse8 0.0259 | imag_ret 2.436 surv 0.997 | t sim/wm/pi 1.2/9.6/15.3s
+it 18850 | 0.53 h | 2.0 it/s | updates 7508 | train_ret 0.699 (n=117) | wm nse1 0.0113 nse8 0.0235 | imag_ret 2.430 surv 0.997 | t sim/wm/pi 1.2/9.3/14.2s
+it 18900 | 0.53 h | 1.9 it/s | updates 7528 | train_ret 0.693 (n=135) | wm nse1 0.0113 nse8 0.0215 | imag_ret 2.429 surv 0.996 | t sim/wm/pi 1.3/8.8/15.9s
+it 18950 | 0.54 h | 1.9 it/s | updates 7548 | train_ret 0.697 (n=149) | wm nse1 0.0111 nse8 0.0192 | imag_ret 2.436 surv 0.997 | t sim/wm/pi 1.2/9.6/15.9s
+it 19000 | 0.55 h | 1.9 it/s | updates 7568 | train_ret 0.696 (n=193) | wm nse1 0.0113 nse8 0.0219 | imag_ret 2.441 surv 0.997 | t sim/wm/pi 1.2/9.3/15.5s
+it 19050 | 0.56 h | 2.0 it/s | updates 7588 | train_ret 0.696 (n=1131) | wm nse1 0.0112 nse8 0.0257 | imag_ret 2.440 surv 0.997 | t sim/wm/pi 1.3/9.6/14.3s
+it 19100 | 0.56 h | 1.9 it/s | updates 7608 | train_ret 0.693 (n=1143) | wm nse1 0.0111 nse8 0.0228 | imag_ret 2.443 surv 0.998 | t sim/wm/pi 1.3/9.2/15.9s
+it 19150 | 0.57 h | 1.8 it/s | updates 7628 | train_ret 0.694 (n=600) | wm nse1 0.0112 nse8 0.0215 | imag_ret 2.450 surv 0.998 | t sim/wm/pi 1.3/9.7/16.3s
+it 19200 | 0.58 h | 2.0 it/s | updates 7648 | train_ret 0.669 (n=270) | wm nse1 0.0112 nse8 0.0232 | imag_ret 2.448 surv 0.997 | t sim/wm/pi 1.3/9.2/14.3s
+it 19250 | 0.58 h | 1.9 it/s | updates 7668 | train_ret 0.688 (n=223) | wm nse1 0.0111 nse8 0.0209 | imag_ret 2.454 surv 0.997 | t sim/wm/pi 1.3/8.5/15.9s
+it 19300 | 0.59 h | 1.9 it/s | updates 7688 | train_ret 0.686 (n=193) | wm nse1 0.0112 nse8 0.0207 | imag_ret 2.453 surv 0.997 | t sim/wm/pi 1.3/9.5/15.6s
+it 19350 | 0.60 h | 1.9 it/s | updates 7708 | train_ret 0.708 (n=155) | wm nse1 0.0112 nse8 0.0280 | imag_ret 2.449 surv 0.998 | t sim/wm/pi 1.2/9.6/15.7s
+it 19400 | 0.61 h | 1.9 it/s | updates 7728 | train_ret 0.689 (n=152) | wm nse1 0.0113 nse8 0.0250 | imag_ret 2.448 surv 0.997 | t sim/wm/pi 1.3/9.6/14.7s
+it 19450 | 0.61 h | 1.9 it/s | updates 7748 | train_ret 0.692 (n=177) | wm nse1 0.0113 nse8 0.0224 | imag_ret 2.455 surv 0.997 | t sim/wm/pi 1.3/9.6/16.0s
+it 19500 | 0.62 h | 1.9 it/s | updates 7768 | train_ret 0.689 (n=198) | wm nse1 0.0112 nse8 0.0220 | imag_ret 2.453 surv 0.997 | t sim/wm/pi 1.3/9.5/15.9s
+it 19550 | 0.63 h | 1.9 it/s | updates 7788 | train_ret 0.711 (n=873) | wm nse1 0.0111 nse8 0.0219 | imag_ret 2.460 surv 0.998 | t sim/wm/pi 1.2/9.1/15.7s
+it 19600 | 0.64 h | 2.0 it/s | updates 7808 | train_ret 0.694 (n=1069) | wm nse1 0.0110 nse8 0.0221 | imag_ret 2.461 surv 0.997 | t sim/wm/pi 1.3/9.3/14.6s
+it 19650 | 0.64 h | 1.9 it/s | updates 7828 | train_ret 0.676 (n=628) | wm nse1 0.0111 nse8 0.0241 | imag_ret 2.469 surv 0.998 | t sim/wm/pi 1.3/8.9/16.3s
+it 19700 | 0.65 h | 1.9 it/s | updates 7848 | train_ret 0.648 (n=379) | wm nse1 0.0113 nse8 0.0262 | imag_ret 2.465 surv 0.998 | t sim/wm/pi 1.3/9.3/16.2s
+it 19750 | 0.66 h | 1.9 it/s | updates 7868 | train_ret 0.680 (n=218) | wm nse1 0.0112 nse8 0.0230 | imag_ret 2.470 surv 0.998 | t sim/wm/pi 1.3/9.6/15.4s
+it 19800 | 0.66 h | 2.1 it/s | updates 7888 | train_ret 0.649 (n=234) | wm nse1 0.0115 nse8 0.0274 | imag_ret 2.462 surv 0.998 | t sim/wm/pi 1.2/8.4/14.1s
+it 19850 | 0.67 h | 1.9 it/s | updates 7908 | train_ret 0.658 (n=177) | wm nse1 0.0114 nse8 0.0232 | imag_ret 2.464 surv 0.997 | t sim/wm/pi 1.2/9.9/15.6s
+it 19900 | 0.68 h | 2.0 it/s | updates 7928 | train_ret 0.698 (n=158) | wm nse1 0.0113 nse8 0.0216 | imag_ret 2.458 surv 0.997 | t sim/wm/pi 1.3/7.9/15.9s
+it 19950 | 0.69 h | 2.0 it/s | updates 7948 | train_ret 0.665 (n=160) | wm nse1 0.0111 nse8 0.0218 | imag_ret 2.459 surv 0.996 | t sim/wm/pi 1.3/9.3/14.7s
+it 20000 | 0.69 h | 1.9 it/s | updates 7968 | train_ret 0.679 (n=184) | wm nse1 0.0112 nse8 0.0211 | imag_ret 2.461 surv 0.996 | t sim/wm/pi 1.3/9.4/15.7s
+it 20050 | 0.70 h | 1.9 it/s | updates 7988 | train_ret 0.707 (n=737) | wm nse1 0.0113 nse8 0.0249 | imag_ret 2.469 surv 0.997 | t sim/wm/pi 1.2/9.4/15.8s
+it 20100 | 0.71 h | 1.9 it/s | updates 8008 | train_ret 0.693 (n=1004) | wm nse1 0.0112 nse8 0.0244 | imag_ret 2.463 surv 0.997 | t sim/wm/pi 1.3/9.7/15.6s
+it 20150 | 0.71 h | 2.1 it/s | updates 8028 | train_ret 0.686 (n=687) | wm nse1 0.0113 nse8 0.0214 | imag_ret 2.471 surv 0.997 | t sim/wm/pi 1.3/8.2/14.4s
+it 20200 | 0.72 h | 1.9 it/s | updates 8048 | train_ret 0.661 (n=398) | wm nse1 0.0113 nse8 0.0201 | imag_ret 2.464 surv 0.998 | t sim/wm/pi 1.3/9.0/16.4s
+it 20250 | 0.73 h | 1.9 it/s | updates 8068 | train_ret 0.651 (n=241) | wm nse1 0.0114 nse8 0.0341 | imag_ret 2.466 surv 0.997 | t sim/wm/pi 1.2/9.3/15.9s
+it 20300 | 0.74 h | 1.9 it/s | updates 8088 | train_ret 0.648 (n=244) | wm nse1 0.0114 nse8 0.0218 | imag_ret 2.470 surv 0.998 | t sim/wm/pi 1.2/9.8/15.5s
+it 20350 | 0.74 h | 2.0 it/s | updates 8108 | train_ret 0.649 (n=178) | wm nse1 0.0113 nse8 0.0246 | imag_ret 2.463 surv 0.997 | t sim/wm/pi 1.3/9.3/14.7s
+it 20400 | 0.75 h | 1.9 it/s | updates 8128 | train_ret 0.673 (n=192) | wm nse1 0.0114 nse8 0.0275 | imag_ret 2.469 surv 0.997 | t sim/wm/pi 1.3/8.4/16.4s
+it 20450 | 0.76 h | 1.9 it/s | updates 8148 | train_ret 0.670 (n=199) | wm nse1 0.0114 nse8 0.0292 | imag_ret 2.476 surv 0.997 | t sim/wm/pi 1.3/9.2/16.5s
+it 20500 | 0.77 h | 1.9 it/s | updates 8168 | train_ret 0.652 (n=214) | wm nse1 0.0114 nse8 0.0218 | imag_ret 2.457 surv 0.997 | t sim/wm/pi 1.2/9.3/15.8s
+it 20550 | 0.77 h | 2.0 it/s | updates 8188 | train_ret 0.669 (n=617) | wm nse1 0.0114 nse8 0.0245 | imag_ret 2.456 surv 0.995 | t sim/wm/pi 1.3/9.6/14.7s
+it 20600 | 0.78 h | 1.9 it/s | updates 8208 | train_ret 0.661 (n=891) | wm nse1 0.0118 nse8 0.0336 | imag_ret 2.468 surv 0.995 | t sim/wm/pi 1.3/9.4/16.0s
+it 20650 | 0.79 h | 1.9 it/s | updates 8228 | train_ret 0.641 (n=725) | wm nse1 0.0118 nse8 0.0270 | imag_ret 2.463 surv 0.995 | t sim/wm/pi 1.3/9.1/15.8s
+it 20700 | 0.79 h | 2.0 it/s | updates 8248 | train_ret 0.604 (n=483) | wm nse1 0.0122 nse8 0.0283 | imag_ret 2.464 surv 0.994 | t sim/wm/pi 1.3/9.5/14.7s
+it 20750 | 0.80 h | 1.9 it/s | updates 8268 | train_ret 0.595 (n=285) | wm nse1 0.0126 nse8 0.0234 | imag_ret 2.463 surv 0.994 | t sim/wm/pi 1.3/9.3/16.0s
+it 20800 | 0.81 h | 1.9 it/s | updates 8288 | train_ret 0.617 (n=247) | wm nse1 0.0126 nse8 0.0355 | imag_ret 2.456 surv 0.994 | t sim/wm/pi 1.3/9.5/16.0s
+it 20850 | 0.82 h | 2.0 it/s | updates 8308 | train_ret 0.640 (n=171) | wm nse1 0.0125 nse8 0.0264 | imag_ret 2.467 surv 0.996 | t sim/wm/pi 1.2/9.0/15.4s
+it 20900 | 0.82 h | 2.0 it/s | updates 8328 | train_ret 0.645 (n=175) | wm nse1 0.0126 nse8 0.0283 | imag_ret 2.468 surv 0.996 | t sim/wm/pi 1.3/9.4/14.3s
+it 20950 | 0.83 h | 2.0 it/s | updates 8348 | train_ret 0.669 (n=186) | wm nse1 0.0122 nse8 0.0228 | imag_ret 2.470 surv 0.996 | t sim/wm/pi 1.3/8.2/15.8s
+it 21000 | 0.84 h | 2.0 it/s | updates 8368 | train_ret 0.679 (n=172) | wm nse1 0.0124 nse8 0.0217 | imag_ret 2.463 surv 0.996 | t sim/wm/pi 1.2/8.1/15.4s
+it 21050 | 0.84 h | 2.4 it/s | updates 8388 | train_ret 0.704 (n=506) | wm nse1 0.0120 nse8 0.0248 | imag_ret 2.469 surv 0.996 | t sim/wm/pi 1.2/5.0/14.3s
+it 21100 | 0.85 h | 2.2 it/s | updates 8408 | train_ret 0.695 (n=800) | wm nse1 0.0121 nse8 0.0316 | imag_ret 2.476 surv 0.996 | t sim/wm/pi 1.2/8.2/13.6s
+it 21150 | 0.86 h | 1.9 it/s | updates 8428 | train_ret 0.680 (n=718) | wm nse1 0.0120 nse8 0.0277 | imag_ret 2.471 surv 0.996 | t sim/wm/pi 1.3/9.5/15.4s
+it 21200 | 0.86 h | 1.9 it/s | updates 8448 | train_ret 0.644 (n=574) | wm nse1 0.0121 nse8 0.0212 | imag_ret 2.473 surv 0.996 | t sim/wm/pi 1.3/9.5/16.2s
+it 21250 | 0.87 h | 1.9 it/s | updates 8468 | train_ret 0.594 (n=395) | wm nse1 0.0120 nse8 0.0345 | imag_ret 2.443 surv 0.995 | t sim/wm/pi 1.3/9.4/15.9s
+it 21300 | 0.88 h | 2.1 it/s | updates 8488 | train_ret 0.576 (n=315) | wm nse1 0.0121 nse8 0.0239 | imag_ret 2.446 surv 0.993 | t sim/wm/pi 1.2/8.9/14.1s
+it 21350 | 0.89 h | 1.9 it/s | updates 8508 | train_ret 0.628 (n=213) | wm nse1 0.0123 nse8 0.0256 | imag_ret 2.463 surv 0.993 | t sim/wm/pi 1.3/9.2/15.9s
+it 21400 | 0.89 h | 1.9 it/s | updates 8528 | train_ret 0.634 (n=183) | wm nse1 0.0123 nse8 0.0223 | imag_ret 2.463 surv 0.994 | t sim/wm/pi 1.2/9.5/15.9s
+it 21450 | 0.90 h | 2.1 it/s | updates 8548 | train_ret 0.617 (n=252) | wm nse1 0.0122 nse8 0.0375 | imag_ret 2.454 surv 0.995 | t sim/wm/pi 1.3/8.6/14.0s
+it 21500 | 0.91 h | 1.9 it/s | updates 8568 | train_ret 0.617 (n=250) | wm nse1 0.0123 nse8 0.0291 | imag_ret 2.451 surv 0.993 | t sim/wm/pi 1.3/9.2/15.6s
+it 21550 | 0.91 h | 1.9 it/s | updates 8588 | train_ret 0.629 (n=355) | wm nse1 0.0126 nse8 0.0518 | imag_ret 2.466 surv 0.993 | t sim/wm/pi 1.3/9.6/16.0s
+it 21600 | 0.92 h | 2.0 it/s | updates 8608 | train_ret 0.619 (n=659) | wm nse1 0.0127 nse8 0.0328 | imag_ret 2.469 surv 0.991 | t sim/wm/pi 1.2/9.3/15.0s
+it 21650 | 0.93 h | 2.1 it/s | updates 8628 | train_ret 0.627 (n=667) | wm nse1 0.0133 nse8 0.0239 | imag_ret 2.463 surv 0.992 | t sim/wm/pi 1.2/9.3/13.7s
+it 21700 | 0.94 h | 2.0 it/s | updates 8648 | train_ret 0.630 (n=484) | wm nse1 0.0134 nse8 0.0371 | imag_ret 2.472 surv 0.993 | t sim/wm/pi 1.2/9.3/15.0s
+it 21750 | 0.94 h | 1.9 it/s | updates 8668 | train_ret 0.614 (n=362) | wm nse1 0.0130 nse8 0.0432 | imag_ret 2.474 surv 0.994 | t sim/wm/pi 1.3/9.1/15.7s
+it 21800 | 0.95 h | 1.9 it/s | updates 8688 | train_ret 0.661 (n=282) | wm nse1 0.0132 nse8 0.0231 | imag_ret 2.475 surv 0.994 | t sim/wm/pi 1.2/9.6/15.4s
+it 21850 | 0.96 h | 2.1 it/s | updates 8708 | train_ret 0.638 (n=210) | wm nse1 0.0131 nse8 0.0635 | imag_ret 2.467 surv 0.994 | t sim/wm/pi 1.2/9.3/13.7s
+it 21900 | 0.96 h | 1.9 it/s | updates 8728 | train_ret 0.624 (n=180) | wm nse1 0.0134 nse8 0.0404 | imag_ret 2.474 surv 0.994 | t sim/wm/pi 1.2/9.6/14.8s
+it 21950 | 0.97 h | 1.9 it/s | updates 8748 | train_ret 0.654 (n=210) | wm nse1 0.0132 nse8 0.0353 | imag_ret 2.477 surv 0.994 | t sim/wm/pi 1.2/9.5/15.5s
+it 22000 | 0.98 h | 1.9 it/s | updates 8768 | train_ret 0.630 (n=220) | wm nse1 0.0133 nse8 0.0317 | imag_ret 2.471 surv 0.993 | t sim/wm/pi 1.3/9.2/15.8s
+it 22050 | 0.99 h | 2.1 it/s | updates 8788 | train_ret 0.652 (n=296) | wm nse1 0.0134 nse8 0.0313 | imag_ret 2.470 surv 0.993 | t sim/wm/pi 1.2/9.1/13.8s
+it 22100 | 0.99 h | 1.9 it/s | updates 8808 | train_ret 0.687 (n=592) | wm nse1 0.0133 nse8 0.0328 | imag_ret 2.471 surv 0.992 | t sim/wm/pi 1.2/9.3/15.2s
+it 22150 | 1.00 h | 1.9 it/s | updates 8828 | train_ret 0.679 (n=769) | wm nse1 0.0138 nse8 0.0304 | imag_ret 2.473 surv 0.993 | t sim/wm/pi 1.3/9.3/15.3s
+it 22200 | 1.01 h | 2.0 it/s | updates 8848 | train_ret 0.651 (n=616) | wm nse1 0.0142 nse8 0.0350 | imag_ret 2.465 surv 0.993 | t sim/wm/pi 1.3/9.4/13.9s
+it 22250 | 1.01 h | 1.9 it/s | updates 8868 | train_ret 0.618 (n=409) | wm nse1 0.0147 nse8 0.0284 | imag_ret 2.472 surv 0.993 | t sim/wm/pi 1.3/9.5/15.8s
+it 22300 | 1.02 h | 1.9 it/s | updates 8888 | train_ret 0.637 (n=346) | wm nse1 0.0150 nse8 0.0343 | imag_ret 2.473 surv 0.992 | t sim/wm/pi 1.3/9.4/15.7s
+it 22350 | 1.03 h | 1.9 it/s | updates 8908 | train_ret 0.597 (n=267) | wm nse1 0.0153 nse8 0.0445 | imag_ret 2.464 surv 0.993 | t sim/wm/pi 1.2/9.4/15.6s
+it 22400 | 1.04 h | 2.0 it/s | updates 8928 | train_ret 0.560 (n=256) | wm nse1 0.0152 nse8 0.0360 | imag_ret 2.467 surv 0.993 | t sim/wm/pi 1.2/9.5/14.5s
+it 22450 | 1.04 h | 2.0 it/s | updates 8948 | train_ret 0.646 (n=221) | wm nse1 0.0152 nse8 0.0316 | imag_ret 2.463 surv 0.994 | t sim/wm/pi 1.2/8.6/15.3s
+it 22500 | 1.05 h | 2.1 it/s | updates 8968 | train_ret 0.656 (n=254) | wm nse1 0.0156 nse8 0.0289 | imag_ret 2.464 surv 0.993 | t sim/wm/pi 1.2/7.3/15.2s
+it 22550 | 1.06 h | 1.9 it/s | updates 8988 | train_ret 0.664 (n=329) | wm nse1 0.0150 nse8 0.0425 | imag_ret 2.472 surv 0.994 | t sim/wm/pi 1.3/9.2/16.1s
+it 22600 | 1.06 h | 2.0 it/s | updates 9008 | train_ret 0.689 (n=475) | wm nse1 0.0147 nse8 0.0455 | imag_ret 2.468 surv 0.994 | t sim/wm/pi 1.3/9.1/14.4s
+it 22650 | 1.07 h | 1.9 it/s | updates 9028 | train_ret 0.682 (n=645) | wm nse1 0.0146 nse8 0.0481 | imag_ret 2.466 surv 0.994 | t sim/wm/pi 1.3/9.4/15.1s
+it 22700 | 1.08 h | 1.9 it/s | updates 9048 | train_ret 0.684 (n=588) | wm nse1 0.0145 nse8 0.0314 | imag_ret 2.467 surv 0.995 | t sim/wm/pi 1.2/9.5/15.4s
+it 22750 | 1.08 h | 2.0 it/s | updates 9068 | train_ret 0.688 (n=432) | wm nse1 0.0143 nse8 0.0420 | imag_ret 2.478 surv 0.995 | t sim/wm/pi 1.3/9.5/14.3s
+it 22800 | 1.09 h | 1.9 it/s | updates 9088 | train_ret 0.676 (n=377) | wm nse1 0.0143 nse8 0.0441 | imag_ret 2.468 surv 0.995 | t sim/wm/pi 1.3/9.5/15.7s
+it 22850 | 1.10 h | 2.0 it/s | updates 9108 | train_ret 0.683 (n=266) | wm nse1 0.0142 nse8 0.0288 | imag_ret 2.463 surv 0.996 | t sim/wm/pi 1.2/9.1/15.3s
+it 22900 | 1.11 h | 1.9 it/s | updates 9128 | train_ret 0.695 (n=264) | wm nse1 0.0140 nse8 0.0279 | imag_ret 2.481 surv 0.996 | t sim/wm/pi 1.2/9.4/15.3s
+it 22950 | 1.11 h | 2.0 it/s | updates 9148 | train_ret 0.702 (n=274) | wm nse1 0.0137 nse8 0.0403 | imag_ret 2.473 surv 0.996 | t sim/wm/pi 1.2/9.5/14.0s
+it 23000 | 1.12 h | 2.0 it/s | updates 9168 | train_ret 0.701 (n=295) | wm nse1 0.0138 nse8 0.0328 | imag_ret 2.480 surv 0.996 | t sim/wm/pi 1.3/8.4/15.3s
+it 23050 | 1.13 h | 2.0 it/s | updates 9188 | train_ret 0.718 (n=291) | wm nse1 0.0134 nse8 0.0378 | imag_ret 2.476 surv 0.996 | t sim/wm/pi 1.3/8.4/15.3s
+it 23100 | 1.13 h | 1.9 it/s | updates 9208 | train_ret 0.724 (n=483) | wm nse1 0.0135 nse8 0.0284 | imag_ret 2.480 surv 0.996 | t sim/wm/pi 1.2/9.1/15.4s
+it 23150 | 1.14 h | 2.0 it/s | updates 9228 | train_ret 0.710 (n=749) | wm nse1 0.0129 nse8 0.0323 | imag_ret 2.479 surv 0.997 | t sim/wm/pi 1.3/9.4/13.9s
+it 23200 | 1.15 h | 2.0 it/s | updates 9248 | train_ret 0.713 (n=613) | wm nse1 0.0128 nse8 0.0272 | imag_ret 2.491 surv 0.997 | t sim/wm/pi 1.2/9.1/14.9s
+it 23250 | 1.16 h | 1.9 it/s | updates 9268 | train_ret 0.719 (n=459) | wm nse1 0.0125 nse8 0.0390 | imag_ret 2.502 surv 0.998 | t sim/wm/pi 1.3/9.3/15.6s
+it 23300 | 1.16 h | 1.9 it/s | updates 9288 | train_ret 0.708 (n=393) | wm nse1 0.0121 nse8 0.0272 | imag_ret 2.510 surv 0.998 | t sim/wm/pi 1.3/9.1/16.0s
+it 23350 | 1.17 h | 2.1 it/s | updates 9308 | train_ret 0.724 (n=291) | wm nse1 0.0118 nse8 0.0457 | imag_ret 2.512 surv 0.998 | t sim/wm/pi 1.3/8.3/14.1s
+it 23400 | 1.18 h | 2.0 it/s | updates 9328 | train_ret 0.719 (n=272) | wm nse1 0.0116 nse8 0.0238 | imag_ret 2.511 surv 0.997 | t sim/wm/pi 1.3/8.4/15.2s
+it 23450 | 1.18 h | 1.9 it/s | updates 9348 | train_ret 0.713 (n=248) | wm nse1 0.0114 nse8 0.0200 | imag_ret 2.519 surv 0.998 | t sim/wm/pi 1.3/9.7/15.5s
+it 23500 | 1.19 h | 2.0 it/s | updates 9368 | train_ret 0.713 (n=326) | wm nse1 0.0115 nse8 0.0229 | imag_ret 2.525 surv 0.998 | t sim/wm/pi 1.2/9.6/14.0s
+it 23550 | 1.20 h | 1.9 it/s | updates 9388 | train_ret 0.723 (n=286) | wm nse1 0.0114 nse8 0.0274 | imag_ret 2.539 surv 0.998 | t sim/wm/pi 1.6/8.6/16.1s
+it 23600 | 1.21 h | 1.9 it/s | updates 9408 | train_ret 0.723 (n=451) | wm nse1 0.0114 nse8 0.0216 | imag_ret 2.533 surv 0.998 | t sim/wm/pi 1.3/9.3/15.6s
+it 23650 | 1.21 h | 1.9 it/s | updates 9428 | train_ret 0.736 (n=612) | wm nse1 0.0112 nse8 0.0279 | imag_ret 2.520 surv 0.998 | t sim/wm/pi 1.3/9.5/15.5s
+it 23700 | 1.22 h | 2.0 it/s | updates 9448 | train_ret 0.717 (n=708) | wm nse1 0.0111 nse8 0.0168 | imag_ret 2.507 surv 0.999 | t sim/wm/pi 1.3/9.4/14.1s
+it 23750 | 1.23 h | 1.9 it/s | updates 9468 | train_ret 0.719 (n=514) | wm nse1 0.0111 nse8 0.0220 | imag_ret 2.521 surv 0.999 | t sim/wm/pi 1.3/9.2/15.6s
+it 23800 | 1.23 h | 2.0 it/s | updates 9488 | train_ret 0.706 (n=459) | wm nse1 0.0109 nse8 0.0228 | imag_ret 2.539 surv 0.999 | t sim/wm/pi 1.3/8.9/15.4s
+it 23850 | 1.24 h | 1.9 it/s | updates 9508 | train_ret 0.715 (n=362) | wm nse1 0.0109 nse8 0.0201 | imag_ret 2.538 surv 0.999 | t sim/wm/pi 1.3/9.2/15.8s
+it 23900 | 1.25 h | 2.0 it/s | updates 9528 | train_ret 0.716 (n=304) | wm nse1 0.0108 nse8 0.0209 | imag_ret 2.541 surv 0.999 | t sim/wm/pi 1.3/9.5/14.2s
+it 23950 | 1.26 h | 1.9 it/s | updates 9548 | train_ret 0.727 (n=257) | wm nse1 0.0109 nse8 0.0204 | imag_ret 2.533 surv 0.999 | t sim/wm/pi 1.3/9.4/15.2s
+it 24000 | 1.26 h | 1.9 it/s | updates 9568 | train_ret 0.708 (n=329) | wm nse1 0.0109 nse8 0.0208 | imag_ret 2.541 surv 0.999 | t sim/wm/pi 1.2/9.3/15.7s
+it 24050 | 1.27 h | 2.1 it/s | updates 9588 | train_ret 0.716 (n=301) | wm nse1 0.0108 nse8 0.0226 | imag_ret 2.541 surv 0.999 | t sim/wm/pi 1.2/8.0/13.9s
+it 24100 | 1.28 h | 2.0 it/s | updates 9608 | train_ret 0.723 (n=425) | wm nse1 0.0109 nse8 0.0192 | imag_ret 2.545 surv 0.999 | t sim/wm/pi 1.3/8.0/16.0s
+it 24150 | 1.28 h | 1.9 it/s | updates 9628 | train_ret 0.717 (n=589) | wm nse1 0.0108 nse8 0.0223 | imag_ret 2.542 surv 0.999 | t sim/wm/pi 1.3/9.3/15.7s
+it 24200 | 1.29 h | 1.9 it/s | updates 9648 | train_ret 0.718 (n=657) | wm nse1 0.0108 nse8 0.0238 | imag_ret 2.544 surv 0.999 | t sim/wm/pi 1.2/9.3/15.6s
+it 24250 | 1.30 h | 2.0 it/s | updates 9668 | train_ret 0.722 (n=487) | wm nse1 0.0108 nse8 0.0214 | imag_ret 2.553 surv 0.999 | t sim/wm/pi 1.3/9.1/14.4s
+it 24300 | 1.31 h | 1.8 it/s | updates 9688 | train_ret 0.722 (n=435) | wm nse1 0.0108 nse8 0.0199 | imag_ret 2.550 surv 0.999 | t sim/wm/pi 1.6/9.3/16.4s
+it 24350 | 1.31 h | 1.9 it/s | updates 9708 | train_ret 0.725 (n=367) | wm nse1 0.0108 nse8 0.0204 | imag_ret 2.546 surv 0.999 | t sim/wm/pi 1.5/9.2/16.0s
+it 24400 | 1.32 h | 1.9 it/s | updates 9728 | train_ret 0.727 (n=283) | wm nse1 0.0107 nse8 0.0211 | imag_ret 2.555 surv 0.999 | t sim/wm/pi 1.6/9.1/16.0s
+it 24450 | 1.33 h | 2.0 it/s | updates 9748 | train_ret 0.725 (n=309) | wm nse1 0.0108 nse8 0.0217 | imag_ret 2.544 surv 0.999 | t sim/wm/pi 1.5/9.4/14.1s
+it 24500 | 1.33 h | 1.9 it/s | updates 9768 | train_ret 0.730 (n=291) | wm nse1 0.0108 nse8 0.0177 | imag_ret 2.556 surv 0.999 | t sim/wm/pi 1.3/9.4/15.6s
+it 24550 | 1.34 h | 1.9 it/s | updates 9788 | train_ret 0.729 (n=293) | wm nse1 0.0106 nse8 0.0229 | imag_ret 2.555 surv 0.999 | t sim/wm/pi 1.2/9.6/15.3s
+it 24600 | 1.35 h | 1.9 it/s | updates 9808 | train_ret 0.727 (n=393) | wm nse1 0.0107 nse8 0.0183 | imag_ret 2.554 surv 0.999 | t sim/wm/pi 1.3/9.2/15.8s
+it 24650 | 1.36 h | 2.0 it/s | updates 9828 | train_ret 0.721 (n=534) | wm nse1 0.0107 nse8 0.0216 | imag_ret 2.562 surv 0.999 | t sim/wm/pi 1.3/9.2/14.3s
+it 24700 | 1.36 h | 2.0 it/s | updates 9848 | train_ret 0.732 (n=639) | wm nse1 0.0106 nse8 0.0200 | imag_ret 2.570 surv 0.999 | t sim/wm/pi 1.2/8.4/15.2s
+it 24750 | 1.37 h | 1.9 it/s | updates 9868 | train_ret 0.719 (n=564) | wm nse1 0.0106 nse8 0.0231 | imag_ret 2.559 surv 0.999 | t sim/wm/pi 1.2/9.4/15.1s
+it 24800 | 1.38 h | 2.1 it/s | updates 9888 | train_ret 0.725 (n=446) | wm nse1 0.0105 nse8 0.0218 | imag_ret 2.568 surv 0.999 | t sim/wm/pi 1.2/9.2/13.8s
+it 24850 | 1.38 h | 1.9 it/s | updates 9908 | train_ret 0.728 (n=397) | wm nse1 0.0104 nse8 0.0214 | imag_ret 2.568 surv 0.999 | t sim/wm/pi 1.3/8.9/15.8s
+it 24900 | 1.39 h | 1.9 it/s | updates 9928 | train_ret 0.719 (n=274) | wm nse1 0.0104 nse8 0.0209 | imag_ret 2.575 surv 0.999 | t sim/wm/pi 1.3/9.0/15.9s
+it 24950 | 1.40 h | 1.9 it/s | updates 9948 | train_ret 0.730 (n=281) | wm nse1 0.0103 nse8 0.0197 | imag_ret 2.569 surv 0.999 | t sim/wm/pi 1.2/9.5/15.1s
+it 25000 | 1.41 h | 2.1 it/s | updates 9968 | train_ret 0.725 (n=325) | wm nse1 0.0104 nse8 0.0211 | imag_ret 2.566 surv 0.999 | t sim/wm/pi 1.3/9.1/13.8s
+it 25050 | 1.41 h | 1.9 it/s | updates 9988 | train_ret 0.714 (n=335) | wm nse1 0.0104 nse8 0.0185 | imag_ret 2.578 surv 0.999 | t sim/wm/pi 1.2/9.6/15.5s
+it 25100 | 1.42 h | 2.1 it/s | updates 10008 | train_ret 0.724 (n=389) | wm nse1 0.0102 nse8 0.0178 | imag_ret 2.585 surv 1.000 | t sim/wm/pi 1.2/7.5/15.2s
+it 25150 | 1.43 h | 1.9 it/s | updates 10028 | train_ret 0.732 (n=496) | wm nse1 0.0105 nse8 0.0191 | imag_ret 2.588 surv 0.999 | t sim/wm/pi 1.2/9.3/15.6s
+it 25200 | 1.43 h | 2.0 it/s | updates 10048 | train_ret 0.734 (n=596) | wm nse1 0.0103 nse8 0.0198 | imag_ret 2.588 surv 0.999 | t sim/wm/pi 1.3/9.6/13.9s
+it 25250 | 1.44 h | 1.9 it/s | updates 10068 | train_ret 0.724 (n=543) | wm nse1 0.0101 nse8 0.0199 | imag_ret 2.584 surv 0.999 | t sim/wm/pi 1.3/9.5/15.3s
+it 25300 | 1.45 h | 2.0 it/s | updates 10088 | train_ret 0.734 (n=451) | wm nse1 0.0103 nse8 0.0202 | imag_ret 2.589 surv 0.999 | t sim/wm/pi 1.2/9.2/15.0s
+it 25350 | 1.45 h | 1.9 it/s | updates 10108 | train_ret 0.747 (n=418) | wm nse1 0.0103 nse8 0.0250 | imag_ret 2.588 surv 0.999 | t sim/wm/pi 1.3/9.2/15.6s
+it 25400 | 1.46 h | 2.0 it/s | updates 10128 | train_ret 0.713 (n=332) | wm nse1 0.0103 nse8 0.0189 | imag_ret 2.595 surv 1.000 | t sim/wm/pi 1.3/9.5/14.0s
+it 25450 | 1.47 h | 1.9 it/s | updates 10148 | train_ret 0.722 (n=310) | wm nse1 0.0102 nse8 0.0190 | imag_ret 2.579 surv 0.999 | t sim/wm/pi 1.2/9.0/15.5s
+it 25500 | 1.48 h | 1.9 it/s | updates 10168 | train_ret 0.729 (n=314) | wm nse1 0.0101 nse8 0.0205 | imag_ret 2.574 surv 0.999 | t sim/wm/pi 1.3/9.6/15.4s
+it 25550 | 1.48 h | 2.0 it/s | updates 10188 | train_ret 0.725 (n=360) | wm nse1 0.0102 nse8 0.0190 | imag_ret 2.588 surv 0.999 | t sim/wm/pi 1.2/9.4/14.1s
+it 25600 | 1.49 h | 2.0 it/s | updates 10208 | train_ret 0.724 (n=361) | wm nse1 0.0101 nse8 0.0190 | imag_ret 2.589 surv 0.999 | t sim/wm/pi 1.2/9.1/15.0s
+it 25650 | 1.50 h | 1.9 it/s | updates 10228 | train_ret 0.724 (n=495) | wm nse1 0.0101 nse8 0.0218 | imag_ret 2.591 surv 0.999 | t sim/wm/pi 1.3/9.2/15.7s
+it 25700 | 1.50 h | 1.9 it/s | updates 10248 | train_ret 0.716 (n=584) | wm nse1 0.0101 nse8 0.0192 | imag_ret 2.592 surv 0.999 | t sim/wm/pi 1.3/9.2/15.9s
+it 25750 | 1.51 h | 2.0 it/s | updates 10268 | train_ret 0.726 (n=535) | wm nse1 0.0101 nse8 0.0196 | imag_ret 2.593 surv 0.999 | t sim/wm/pi 1.2/9.3/14.2s
+it 25800 | 1.52 h | 1.9 it/s | updates 10288 | train_ret 0.731 (n=436) | wm nse1 0.0101 nse8 0.0198 | imag_ret 2.588 surv 0.999 | t sim/wm/pi 1.2/9.5/15.1s
+it 25850 | 1.53 h | 1.9 it/s | updates 10308 | train_ret 0.732 (n=414) | wm nse1 0.0100 nse8 0.0192 | imag_ret 2.596 surv 0.999 | t sim/wm/pi 1.2/9.3/15.4s
+it 25900 | 1.53 h | 2.0 it/s | updates 10328 | train_ret 0.729 (n=352) | wm nse1 0.0101 nse8 0.0186 | imag_ret 2.599 surv 0.999 | t sim/wm/pi 1.2/8.5/15.7s
+it 25950 | 1.54 h | 2.0 it/s | updates 10348 | train_ret 0.739 (n=332) | wm nse1 0.0100 nse8 0.0168 | imag_ret 2.600 surv 1.000 | t sim/wm/pi 1.3/9.5/14.4s
+it 26000 | 1.55 h | 2.0 it/s | updates 10368 | train_ret 0.739 (n=303) | wm nse1 0.0099 nse8 0.0183 | imag_ret 2.606 surv 1.000 | t sim/wm/pi 1.2/9.4/14.9s
+it 26050 | 1.55 h | 1.9 it/s | updates 10388 | train_ret 0.734 (n=347) | wm nse1 0.0098 nse8 0.0159 | imag_ret 2.599 surv 0.999 | t sim/wm/pi 1.2/9.6/15.5s
+it 26100 | 1.56 h | 2.0 it/s | updates 10408 | train_ret 0.730 (n=298) | wm nse1 0.0099 nse8 0.0181 | imag_ret 2.593 surv 0.999 | t sim/wm/pi 1.3/9.6/13.9s
+it 26150 | 1.57 h | 1.9 it/s | updates 10428 | train_ret 0.731 (n=469) | wm nse1 0.0100 nse8 0.0182 | imag_ret 2.602 surv 0.999 | t sim/wm/pi 1.2/9.5/15.5s
+it 26200 | 1.58 h | 1.9 it/s | updates 10448 | train_ret 0.729 (n=576) | wm nse1 0.0098 nse8 0.0199 | imag_ret 2.602 surv 0.999 | t sim/wm/pi 1.3/9.4/15.3s
+it 26250 | 1.58 h | 1.9 it/s | updates 10468 | train_ret 0.726 (n=517) | wm nse1 0.0098 nse8 0.0194 | imag_ret 2.602 surv 0.999 | t sim/wm/pi 1.2/9.6/15.2s
+it 26300 | 1.59 h | 2.1 it/s | updates 10488 | train_ret 0.732 (n=441) | wm nse1 0.0099 nse8 0.0193 | imag_ret 2.590 surv 0.999 | t sim/wm/pi 1.2/9.5/13.2s
+it 26350 | 1.60 h | 1.9 it/s | updates 10508 | train_ret 0.738 (n=409) | wm nse1 0.0098 nse8 0.0172 | imag_ret 2.598 surv 0.999 | t sim/wm/pi 1.2/9.1/15.6s
+it 26400 | 1.60 h | 1.9 it/s | updates 10528 | train_ret 0.735 (n=386) | wm nse1 0.0098 nse8 0.0213 | imag_ret 2.599 surv 1.000 | t sim/wm/pi 1.3/9.3/15.5s
+it 26450 | 1.61 h | 1.9 it/s | updates 10548 | train_ret 0.720 (n=342) | wm nse1 0.0099 nse8 0.0175 | imag_ret 2.610 surv 0.999 | t sim/wm/pi 1.3/9.4/15.6s
+it 26500 | 1.62 h | 2.1 it/s | updates 10568 | train_ret 0.721 (n=343) | wm nse1 0.0098 nse8 0.0189 | imag_ret 2.610 surv 0.999 | t sim/wm/pi 1.2/9.4/13.5s
+it 26550 | 1.63 h | 1.9 it/s | updates 10588 | train_ret 0.726 (n=365) | wm nse1 0.0097 nse8 0.0190 | imag_ret 2.608 surv 0.999 | t sim/wm/pi 1.2/9.4/15.3s
+it 26600 | 1.63 h | 2.3 it/s | updates 10608 | train_ret 0.730 (n=327) | wm nse1 0.0098 nse8 0.0190 | imag_ret 2.607 surv 0.999 | t sim/wm/pi 1.2/6.6/14.0s
+it 26650 | 1.64 h | 2.0 it/s | updates 10628 | train_ret 0.731 (n=441) | wm nse1 0.0098 nse8 0.0191 | imag_ret 2.606 surv 1.000 | t sim/wm/pi 1.2/9.5/14.8s
+it 26700 | 1.65 h | 2.0 it/s | updates 10648 | train_ret 0.714 (n=554) | wm nse1 0.0097 nse8 0.0189 | imag_ret 2.614 surv 0.999 | t sim/wm/pi 1.2/9.6/14.0s
+it 26750 | 1.65 h | 2.0 it/s | updates 10668 | train_ret 0.734 (n=512) | wm nse1 0.0099 nse8 0.0240 | imag_ret 2.617 surv 1.000 | t sim/wm/pi 1.3/9.2/15.0s
+it 26800 | 1.66 h | 2.0 it/s | updates 10688 | train_ret 0.733 (n=472) | wm nse1 0.0099 nse8 0.0188 | imag_ret 2.614 surv 1.000 | t sim/wm/pi 1.2/9.5/14.8s
+it 26850 | 1.67 h | 2.1 it/s | updates 10708 | train_ret 0.732 (n=448) | wm nse1 0.0099 nse8 0.0201 | imag_ret 2.620 surv 0.999 | t sim/wm/pi 1.2/9.5/13.3s
+it 26900 | 1.67 h | 2.0 it/s | updates 10728 | train_ret 0.723 (n=367) | wm nse1 0.0100 nse8 0.0187 | imag_ret 2.612 surv 0.999 | t sim/wm/pi 1.2/9.2/14.7s
+it 26950 | 1.68 h | 2.0 it/s | updates 10748 | train_ret 0.733 (n=340) | wm nse1 0.0100 nse8 0.0170 | imag_ret 2.616 surv 0.999 | t sim/wm/pi 1.3/8.3/15.0s
+it 27000 | 1.69 h | 1.9 it/s | updates 10768 | train_ret 0.741 (n=323) | wm nse1 0.0100 nse8 0.0182 | imag_ret 2.618 surv 0.999 | t sim/wm/pi 1.2/9.4/15.1s
+it 27050 | 1.69 h | 2.1 it/s | updates 10788 | train_ret 0.733 (n=361) | wm nse1 0.0099 nse8 0.0198 | imag_ret 2.620 surv 0.999 | t sim/wm/pi 1.2/8.9/13.3s
+it 27100 | 1.70 h | 2.0 it/s | updates 10808 | train_ret 0.730 (n=349) | wm nse1 0.0101 nse8 0.0177 | imag_ret 2.614 surv 0.999 | t sim/wm/pi 1.2/9.3/14.8s
+it 27150 | 1.71 h | 2.0 it/s | updates 10828 | train_ret 0.741 (n=387) | wm nse1 0.0100 nse8 0.0186 | imag_ret 2.605 surv 0.999 | t sim/wm/pi 1.2/9.5/14.8s
+it 27200 | 1.72 h | 1.9 it/s | updates 10848 | train_ret 0.730 (n=512) | wm nse1 0.0100 nse8 0.0210 | imag_ret 2.609 surv 0.999 | t sim/wm/pi 1.2/9.4/15.2s
+it 27250 | 1.72 h | 2.0 it/s | updates 10868 | train_ret 0.730 (n=490) | wm nse1 0.0101 nse8 0.0165 | imag_ret 2.613 surv 0.999 | t sim/wm/pi 1.2/9.5/13.8s
+it 27300 | 1.73 h | 2.0 it/s | updates 10888 | train_ret 0.738 (n=446) | wm nse1 0.0099 nse8 0.0169 | imag_ret 2.610 surv 1.000 | t sim/wm/pi 1.2/9.2/14.8s
+it 27350 | 1.74 h | 2.0 it/s | updates 10908 | train_ret 0.732 (n=446) | wm nse1 0.0101 nse8 0.0184 | imag_ret 2.615 surv 0.999 | t sim/wm/pi 1.2/9.1/14.7s
+it 27400 | 1.74 h | 2.1 it/s | updates 10928 | train_ret 0.711 (n=413) | wm nse1 0.0102 nse8 0.0257 | imag_ret 2.605 surv 0.999 | t sim/wm/pi 1.2/8.5/14.4s
+it 27450 | 1.75 h | 2.1 it/s | updates 10948 | train_ret 0.743 (n=328) | wm nse1 0.0102 nse8 0.0237 | imag_ret 2.615 surv 0.999 | t sim/wm/pi 1.2/9.4/13.4s
+it 27500 | 1.76 h | 1.9 it/s | updates 10968 | train_ret 0.747 (n=326) | wm nse1 0.0102 nse8 0.0199 | imag_ret 2.613 surv 0.999 | t sim/wm/pi 1.3/9.3/15.1s
+it 27550 | 1.76 h | 2.0 it/s | updates 10988 | train_ret 0.714 (n=354) | wm nse1 0.0101 nse8 0.0189 | imag_ret 2.610 surv 0.999 | t sim/wm/pi 1.2/9.2/14.9s
+it 27600 | 1.77 h | 2.1 it/s | updates 11008 | train_ret 0.731 (n=389) | wm nse1 0.0102 nse8 0.0197 | imag_ret 2.611 surv 0.999 | t sim/wm/pi 1.2/9.5/13.4s
+it 27650 | 1.78 h | 1.9 it/s | updates 11028 | train_ret 0.725 (n=387) | wm nse1 0.0101 nse8 0.0231 | imag_ret 2.609 surv 0.999 | t sim/wm/pi 1.2/9.7/14.8s
+it 27700 | 1.78 h | 2.0 it/s | updates 11048 | train_ret 0.732 (n=492) | wm nse1 0.0101 nse8 0.0245 | imag_ret 2.610 surv 0.999 | t sim/wm/pi 1.2/9.6/14.6s
+it 27750 | 1.79 h | 1.9 it/s | updates 11068 | train_ret 0.727 (n=514) | wm nse1 0.0102 nse8 0.0204 | imag_ret 2.618 surv 1.000 | t sim/wm/pi 1.2/9.4/15.3s
+it 27800 | 1.80 h | 2.0 it/s | updates 11088 | train_ret 0.736 (n=438) | wm nse1 0.0102 nse8 0.0213 | imag_ret 2.612 surv 0.999 | t sim/wm/pi 1.2/9.4/13.7s
+it 27850 | 1.81 h | 2.0 it/s | updates 11108 | train_ret 0.729 (n=453) | wm nse1 0.0101 nse8 0.0230 | imag_ret 2.614 surv 0.999 | t sim/wm/pi 1.2/9.3/14.7s
+it 27900 | 1.81 h | 2.0 it/s | updates 11128 | train_ret 0.723 (n=425) | wm nse1 0.0101 nse8 0.0195 | imag_ret 2.609 surv 0.999 | t sim/wm/pi 1.2/9.4/14.8s
+it 27950 | 1.82 h | 2.0 it/s | updates 11148 | train_ret 0.729 (n=378) | wm nse1 0.0102 nse8 0.0190 | imag_ret 2.619 surv 0.999 | t sim/wm/pi 1.2/9.3/14.7s
+it 28000 | 1.83 h | 2.0 it/s | updates 11168 | train_ret 0.728 (n=363) | wm nse1 0.0101 nse8 0.0201 | imag_ret 2.615 surv 0.999 | t sim/wm/pi 1.2/9.4/13.7s
+it 28050 | 1.83 h | 1.9 it/s | updates 11188 | train_ret 0.729 (n=325) | wm nse1 0.0100 nse8 0.0216 | imag_ret 2.614 surv 0.999 | t sim/wm/pi 1.2/9.0/15.3s
+it 28100 | 1.84 h | 2.0 it/s | updates 11208 | train_ret 0.741 (n=407) | wm nse1 0.0099 nse8 0.0201 | imag_ret 2.619 surv 0.999 | t sim/wm/pi 1.2/9.4/14.7s
+it 28150 | 1.85 h | 2.0 it/s | updates 11228 | train_ret 0.729 (n=417) | wm nse1 0.0100 nse8 0.0216 | imag_ret 2.625 surv 0.999 | t sim/wm/pi 1.2/9.3/14.7s
+it 28200 | 1.85 h | 2.1 it/s | updates 11248 | train_ret 0.740 (n=461) | wm nse1 0.0100 nse8 0.0162 | imag_ret 2.606 surv 0.999 | t sim/wm/pi 1.2/9.5/13.4s
+it 28250 | 1.86 h | 1.9 it/s | updates 11268 | train_ret 0.745 (n=483) | wm nse1 0.0098 nse8 0.0178 | imag_ret 2.618 surv 0.999 | t sim/wm/pi 1.2/9.4/15.0s
+it 28300 | 1.87 h | 1.9 it/s | updates 11288 | train_ret 0.741 (n=477) | wm nse1 0.0099 nse8 0.0182 | imag_ret 2.621 surv 0.999 | t sim/wm/pi 1.3/9.5/15.1s
+it 28350 | 1.88 h | 2.1 it/s | updates 11308 | train_ret 0.732 (n=480) | wm nse1 0.0099 nse8 0.0189 | imag_ret 2.629 surv 0.999 | t sim/wm/pi 1.2/9.1/13.2s
+it 28400 | 1.88 h | 2.0 it/s | updates 11328 | train_ret 0.733 (n=385) | wm nse1 0.0098 nse8 0.0207 | imag_ret 2.631 surv 0.999 | t sim/wm/pi 1.2/9.4/14.6s
+it 28450 | 1.89 h | 2.0 it/s | updates 11348 | train_ret 0.733 (n=391) | wm nse1 0.0098 nse8 0.0195 | imag_ret 2.626 surv 0.999 | t sim/wm/pi 1.2/9.6/14.6s
+it 28500 | 1.90 h | 2.0 it/s | updates 11368 | train_ret 0.752 (n=345) | wm nse1 0.0098 nse8 0.0162 | imag_ret 2.624 surv 0.999 | t sim/wm/pi 1.2/9.6/14.6s
+it 28550 | 1.90 h | 2.1 it/s | updates 11388 | train_ret 0.752 (n=315) | wm nse1 0.0098 nse8 0.0165 | imag_ret 2.631 surv 0.999 | t sim/wm/pi 1.3/9.4/13.7s
+it 28600 | 1.91 h | 1.9 it/s | updates 11408 | train_ret 0.737 (n=412) | wm nse1 0.0097 nse8 0.0186 | imag_ret 2.634 surv 0.999 | t sim/wm/pi 1.2/9.4/15.2s
+it 28650 | 1.92 h | 2.0 it/s | updates 11428 | train_ret 0.747 (n=395) | wm nse1 0.0098 nse8 0.0175 | imag_ret 2.641 surv 1.000 | t sim/wm/pi 1.2/9.5/14.5s
+it 28700 | 1.92 h | 2.0 it/s | updates 11448 | train_ret 0.738 (n=446) | wm nse1 0.0097 nse8 0.0176 | imag_ret 2.646 surv 0.999 | t sim/wm/pi 1.2/9.5/14.7s
+it 28750 | 1.93 h | 2.1 it/s | updates 11468 | train_ret 0.737 (n=510) | wm nse1 0.0095 nse8 0.0168 | imag_ret 2.652 surv 0.999 | t sim/wm/pi 1.2/9.5/13.3s
+it 28800 | 1.94 h | 2.0 it/s | updates 11488 | train_ret 0.737 (n=490) | wm nse1 0.0095 nse8 0.0203 | imag_ret 2.649 surv 0.999 | t sim/wm/pi 1.2/9.1/15.1s
+it 28850 | 1.95 h | 2.0 it/s | updates 11508 | train_ret 0.735 (n=462) | wm nse1 0.0094 nse8 0.0192 | imag_ret 2.644 surv 1.000 | t sim/wm/pi 1.2/8.9/15.0s
+it 28900 | 1.95 h | 2.0 it/s | updates 11528 | train_ret 0.732 (n=390) | wm nse1 0.0095 nse8 0.0217 | imag_ret 2.646 surv 0.999 | t sim/wm/pi 1.2/9.6/14.8s
+it 28950 | 1.96 h | 2.1 it/s | updates 11548 | train_ret 0.741 (n=378) | wm nse1 0.0094 nse8 0.0192 | imag_ret 2.643 surv 1.000 | t sim/wm/pi 1.2/9.5/13.1s
+it 29000 | 1.97 h | 2.0 it/s | updates 11568 | train_ret 0.754 (n=363) | wm nse1 0.0095 nse8 0.0185 | imag_ret 2.639 surv 1.000 | t sim/wm/pi 1.2/9.5/14.7s
+it 29050 | 1.97 h | 2.0 it/s | updates 11588 | train_ret 0.739 (n=363) | wm nse1 0.0094 nse8 0.0169 | imag_ret 2.648 surv 0.999 | t sim/wm/pi 1.2/9.4/14.8s
+it 29100 | 1.98 h | 2.1 it/s | updates 11608 | train_ret 0.735 (n=431) | wm nse1 0.0096 nse8 0.0159 | imag_ret 2.648 surv 1.000 | t sim/wm/pi 1.2/8.9/13.9s
+it 29150 | 1.99 h | 2.0 it/s | updates 11628 | train_ret 0.755 (n=356) | wm nse1 0.0097 nse8 0.0182 | imag_ret 2.639 surv 1.000 | t sim/wm/pi 1.2/8.5/14.8s
+it 29200 | 1.99 h | 2.0 it/s | updates 11648 | train_ret 0.755 (n=421) | wm nse1 0.0096 nse8 0.0184 | imag_ret 2.650 surv 0.999 | t sim/wm/pi 1.2/9.2/14.8s
+it 29250 | 2.00 h | 2.0 it/s | updates 11668 | train_ret 0.738 (n=489) | wm nse1 0.0096 nse8 0.0215 | imag_ret 2.648 surv 1.000 | t sim/wm/pi 1.2/9.6/14.8s
+it 29300 | 2.01 h | 2.1 it/s | updates 11688 | train_ret 0.742 (n=476) | wm nse1 0.0096 nse8 0.0208 | imag_ret 2.653 surv 1.000 | t sim/wm/pi 1.2/9.4/13.3s
+it 29350 | 2.01 h | 1.9 it/s | updates 11708 | train_ret 0.742 (n=458) | wm nse1 0.0096 nse8 0.0167 | imag_ret 2.651 surv 0.999 | t sim/wm/pi 1.2/9.4/15.3s
+it 29400 | 2.02 h | 1.9 it/s | updates 11728 | train_ret 0.737 (n=380) | wm nse1 0.0096 nse8 0.0175 | imag_ret 2.654 surv 1.000 | t sim/wm/pi 1.2/9.3/15.1s
+it 29450 | 2.03 h | 1.9 it/s | updates 11748 | train_ret 0.742 (n=422) | wm nse1 0.0097 nse8 0.0181 | imag_ret 2.648 surv 1.000 | t sim/wm/pi 1.2/9.7/15.1s
+it 29500 | 2.04 h | 2.1 it/s | updates 11768 | train_ret 0.749 (n=364) | wm nse1 0.0096 nse8 0.0180 | imag_ret 2.654 surv 1.000 | t sim/wm/pi 1.2/9.3/13.2s
+it 29550 | 2.04 h | 2.0 it/s | updates 11788 | train_ret 0.731 (n=346) | wm nse1 0.0096 nse8 0.0184 | imag_ret 2.653 surv 0.999 | t sim/wm/pi 1.2/9.5/14.8s
+it 29600 | 2.05 h | 1.9 it/s | updates 11808 | train_ret 0.745 (n=422) | wm nse1 0.0096 nse8 0.0197 | imag_ret 2.654 surv 0.999 | t sim/wm/pi 1.3/9.4/15.4s
+it 29650 | 2.06 h | 2.0 it/s | updates 11828 | train_ret 0.743 (n=404) | wm nse1 0.0096 nse8 0.0170 | imag_ret 2.656 surv 1.000 | t sim/wm/pi 1.2/8.8/15.1s
+it 29700 | 2.06 h | 2.1 it/s | updates 11848 | train_ret 0.742 (n=464) | wm nse1 0.0096 nse8 0.0187 | imag_ret 2.651 surv 1.000 | t sim/wm/pi 1.2/9.4/13.3s
+it 29750 | 2.07 h | 1.9 it/s | updates 11868 | train_ret 0.745 (n=503) | wm nse1 0.0096 nse8 0.0169 | imag_ret 2.632 surv 1.000 | t sim/wm/pi 1.2/9.7/15.2s
+it 29800 | 2.08 h | 2.0 it/s | updates 11888 | train_ret 0.747 (n=454) | wm nse1 0.0096 nse8 0.0186 | imag_ret 2.629 surv 0.999 | t sim/wm/pi 1.2/9.3/15.0s
+it 29850 | 2.08 h | 2.0 it/s | updates 11908 | train_ret 0.747 (n=427) | wm nse1 0.0097 nse8 0.0183 | imag_ret 2.644 surv 1.000 | t sim/wm/pi 1.3/9.6/14.2s
+it 29900 | 2.09 h | 1.9 it/s | updates 11928 | train_ret 0.747 (n=383) | wm nse1 0.0095 nse8 0.0170 | imag_ret 2.644 surv 1.000 | t sim/wm/pi 1.3/9.5/15.6s
+it 29950 | 2.10 h | 1.9 it/s | updates 11948 | train_ret 0.738 (n=413) | wm nse1 0.0097 nse8 0.0192 | imag_ret 2.647 surv 1.000 | t sim/wm/pi 1.2/9.7/15.3s
+it 30000 | 2.11 h | 1.9 it/s | updates 11968 | train_ret 0.734 (n=400) | wm nse1 0.0095 nse8 0.0184 | imag_ret 2.637 surv 1.000 | t sim/wm/pi 1.2/9.4/15.5s
+it 30050 | 2.11 h | 2.0 it/s | updates 11988 | train_ret 0.735 (n=394) | wm nse1 0.0097 nse8 0.0172 | imag_ret 2.638 surv 1.000 | t sim/wm/pi 1.3/9.4/13.7s
+it 30100 | 2.12 h | 1.9 it/s | updates 12008 | train_ret 0.744 (n=400) | wm nse1 0.0096 nse8 0.0183 | imag_ret 2.638 surv 1.000 | t sim/wm/pi 1.2/9.5/15.7s
+it 30150 | 2.13 h | 1.9 it/s | updates 12028 | train_ret 0.733 (n=377) | wm nse1 0.0097 nse8 0.0173 | imag_ret 2.640 surv 1.000 | t sim/wm/pi 1.2/9.3/15.3s
+it 30200 | 2.14 h | 2.0 it/s | updates 12048 | train_ret 0.738 (n=473) | wm nse1 0.0097 nse8 0.0191 | imag_ret 2.635 surv 1.000 | t sim/wm/pi 1.2/9.3/15.1s
+it 30250 | 2.14 h | 2.0 it/s | updates 12068 | train_ret 0.735 (n=480) | wm nse1 0.0097 nse8 0.0210 | imag_ret 2.635 surv 0.999 | t sim/wm/pi 1.3/9.7/13.9s
+it 30300 | 2.15 h | 1.9 it/s | updates 12088 | train_ret 0.745 (n=449) | wm nse1 0.0099 nse8 0.0201 | imag_ret 2.634 surv 0.999 | t sim/wm/pi 1.3/9.2/15.1s
+it 30350 | 2.16 h | 1.9 it/s | updates 12108 | train_ret 0.748 (n=402) | wm nse1 0.0098 nse8 0.0186 | imag_ret 2.633 surv 0.999 | t sim/wm/pi 1.3/9.6/15.3s
+it 30400 | 2.16 h | 1.9 it/s | updates 12128 | train_ret 0.737 (n=390) | wm nse1 0.0098 nse8 0.0185 | imag_ret 2.634 surv 1.000 | t sim/wm/pi 1.3/9.4/15.6s
+it 30450 | 2.17 h | 2.0 it/s | updates 12148 | train_ret 0.748 (n=361) | wm nse1 0.0097 nse8 0.0209 | imag_ret 2.629 surv 0.999 | t sim/wm/pi 1.3/9.5/13.8s
+it 30500 | 2.18 h | 1.9 it/s | updates 12168 | train_ret 0.731 (n=400) | wm nse1 0.0098 nse8 0.0191 | imag_ret 2.616 surv 0.999 | t sim/wm/pi 1.2/9.4/15.3s
+it 30550 | 2.18 h | 1.9 it/s | updates 12188 | train_ret 0.732 (n=367) | wm nse1 0.0098 nse8 0.0196 | imag_ret 2.632 surv 1.000 | t sim/wm/pi 1.2/9.3/15.2s
+it 30600 | 2.19 h | 2.0 it/s | updates 12208 | train_ret 0.739 (n=450) | wm nse1 0.0097 nse8 0.0166 | imag_ret 2.635 surv 0.999 | t sim/wm/pi 1.2/9.7/13.5s
+it 30650 | 2.20 h | 1.9 it/s | updates 12228 | train_ret 0.742 (n=413) | wm nse1 0.0098 nse8 0.0175 | imag_ret 2.641 surv 0.999 | t sim/wm/pi 1.3/9.5/15.5s
+it 30700 | 2.21 h | 1.9 it/s | updates 12248 | train_ret 0.741 (n=451) | wm nse1 0.0097 nse8 0.0196 | imag_ret 2.637 surv 0.999 | t sim/wm/pi 1.3/9.5/15.6s
+it 30750 | 2.21 h | 1.9 it/s | updates 12268 | train_ret 0.748 (n=453) | wm nse1 0.0098 nse8 0.0182 | imag_ret 2.642 surv 0.999 | t sim/wm/pi 1.3/9.5/15.3s
+it 30800 | 2.22 h | 2.0 it/s | updates 12288 | train_ret 0.742 (n=470) | wm nse1 0.0096 nse8 0.0170 | imag_ret 2.641 surv 0.999 | t sim/wm/pi 1.2/9.6/13.6s
+it 30850 | 2.23 h | 1.9 it/s | updates 12308 | train_ret 0.751 (n=481) | wm nse1 0.0098 nse8 0.0172 | imag_ret 2.645 surv 0.999 | t sim/wm/pi 1.2/9.6/15.2s
+it 30900 | 2.24 h | 1.9 it/s | updates 12328 | train_ret 0.744 (n=433) | wm nse1 0.0098 nse8 0.0192 | imag_ret 2.651 surv 1.000 | t sim/wm/pi 1.3/9.6/15.9s
+it 30950 | 2.24 h | 1.9 it/s | updates 12348 | train_ret 0.753 (n=404) | wm nse1 0.0097 nse8 0.0183 | imag_ret 2.646 surv 0.999 | t sim/wm/pi 1.3/9.5/15.6s
+it 31000 | 2.25 h | 2.0 it/s | updates 12368 | train_ret 0.744 (n=400) | wm nse1 0.0097 nse8 0.0173 | imag_ret 2.645 surv 0.999 | t sim/wm/pi 1.2/9.5/14.0s
+it 31050 | 2.26 h | 1.9 it/s | updates 12388 | train_ret 0.745 (n=356) | wm nse1 0.0098 nse8 0.0190 | imag_ret 2.642 surv 1.000 | t sim/wm/pi 1.2/9.5/15.1s
+it 31100 | 2.26 h | 2.0 it/s | updates 12408 | train_ret 0.740 (n=405) | wm nse1 0.0097 nse8 0.0196 | imag_ret 2.644 surv 1.000 | t sim/wm/pi 1.2/9.3/15.0s
+it 31150 | 2.27 h | 1.9 it/s | updates 12428 | train_ret 0.742 (n=374) | wm nse1 0.0097 nse8 0.0194 | imag_ret 2.647 surv 0.999 | t sim/wm/pi 1.2/9.5/15.8s
+it 31200 | 2.28 h | 2.0 it/s | updates 12448 | train_ret 0.752 (n=372) | wm nse1 0.0097 nse8 0.0164 | imag_ret 2.650 surv 1.000 | t sim/wm/pi 1.3/9.6/14.2s
+it 31250 | 2.29 h | 1.9 it/s | updates 12468 | train_ret 0.749 (n=450) | wm nse1 0.0096 nse8 0.0181 | imag_ret 2.657 surv 1.000 | t sim/wm/pi 1.2/9.6/15.1s
+it 31300 | 2.29 h | 1.9 it/s | updates 12488 | train_ret 0.736 (n=462) | wm nse1 0.0097 nse8 0.0212 | imag_ret 2.658 surv 1.000 | t sim/wm/pi 1.2/9.1/15.6s
+it 31350 | 2.30 h | 1.9 it/s | updates 12508 | train_ret 0.738 (n=461) | wm nse1 0.0096 nse8 0.0181 | imag_ret 2.658 surv 1.000 | t sim/wm/pi 1.2/9.5/15.2s
+it 31400 | 2.31 h | 2.1 it/s | updates 12528 | train_ret 0.746 (n=404) | wm nse1 0.0096 nse8 0.0205 | imag_ret 2.662 surv 1.000 | t sim/wm/pi 1.2/9.2/13.7s
+it 31450 | 2.31 h | 1.9 it/s | updates 12548 | train_ret 0.748 (n=413) | wm nse1 0.0098 nse8 0.0184 | imag_ret 2.657 surv 1.000 | t sim/wm/pi 1.2/9.5/15.4s
+it 31500 | 2.32 h | 2.0 it/s | updates 12568 | train_ret 0.743 (n=381) | wm nse1 0.0099 nse8 0.0271 | imag_ret 2.660 surv 1.000 | t sim/wm/pi 1.2/8.6/14.8s
+it 31550 | 2.33 h | 2.1 it/s | updates 12588 | train_ret 0.754 (n=351) | wm nse1 0.0098 nse8 0.0222 | imag_ret 2.661 surv 0.999 | t sim/wm/pi 1.2/9.1/13.6s
+it 31600 | 2.33 h | 1.9 it/s | updates 12608 | train_ret 0.746 (n=360) | wm nse1 0.0098 nse8 0.0183 | imag_ret 2.664 surv 0.999 | t sim/wm/pi 1.2/9.5/15.1s
+it 31650 | 2.34 h | 1.9 it/s | updates 12628 | train_ret 0.739 (n=417) | wm nse1 0.0098 nse8 0.0167 | imag_ret 2.668 surv 1.000 | t sim/wm/pi 1.3/9.5/15.3s
+it 31700 | 2.35 h | 2.0 it/s | updates 12648 | train_ret 0.735 (n=402) | wm nse1 0.0096 nse8 0.0208 | imag_ret 2.662 surv 1.000 | t sim/wm/pi 1.2/8.7/15.3s
+it 31750 | 2.36 h | 2.1 it/s | updates 12668 | train_ret 0.752 (n=440) | wm nse1 0.0097 nse8 0.0206 | imag_ret 2.662 surv 0.999 | t sim/wm/pi 1.2/9.3/13.4s
+it 31800 | 2.36 h | 1.9 it/s | updates 12688 | train_ret 0.745 (n=468) | wm nse1 0.0098 nse8 0.0185 | imag_ret 2.664 surv 0.999 | t sim/wm/pi 1.2/9.4/15.2s
+it 31850 | 2.37 h | 1.9 it/s | updates 12708 | train_ret 0.747 (n=439) | wm nse1 0.0097 nse8 0.0187 | imag_ret 2.666 surv 0.999 | t sim/wm/pi 1.2/9.5/15.1s
+it 31900 | 2.38 h | 1.9 it/s | updates 12728 | train_ret 0.745 (n=447) | wm nse1 0.0097 nse8 0.0165 | imag_ret 2.665 surv 0.999 | t sim/wm/pi 1.2/9.6/15.4s
+it 31950 | 2.38 h | 2.0 it/s | updates 12748 | train_ret 0.744 (n=399) | wm nse1 0.0099 nse8 0.0203 | imag_ret 2.661 surv 0.999 | t sim/wm/pi 1.3/9.5/14.2s
+it 32000 | 2.39 h | 1.9 it/s | updates 12768 | train_ret 0.760 (n=361) | wm nse1 0.0098 nse8 0.0173 | imag_ret 2.661 surv 0.999 | t sim/wm/pi 1.2/9.4/15.7s
+it 32050 | 2.40 h | 1.9 it/s | updates 12788 | train_ret 0.759 (n=393) | wm nse1 0.0098 nse8 0.0183 | imag_ret 2.667 surv 0.999 | t sim/wm/pi 1.2/9.3/15.8s
+it 32100 | 2.41 h | 1.9 it/s | updates 12808 | train_ret 0.742 (n=376) | wm nse1 0.0098 nse8 0.0165 | imag_ret 2.671 surv 0.999 | t sim/wm/pi 1.2/9.6/15.0s
+it 32150 | 2.41 h | 2.0 it/s | updates 12828 | train_ret 0.752 (n=413) | wm nse1 0.0099 nse8 0.0153 | imag_ret 2.670 surv 0.999 | t sim/wm/pi 1.2/9.5/13.9s
+it 32200 | 2.42 h | 1.9 it/s | updates 12848 | train_ret 0.752 (n=431) | wm nse1 0.0097 nse8 0.0176 | imag_ret 2.669 surv 0.999 | t sim/wm/pi 1.3/9.4/15.4s
+it 32250 | 2.43 h | 1.9 it/s | updates 12868 | train_ret 0.758 (n=411) | wm nse1 0.0096 nse8 0.0177 | imag_ret 2.664 surv 0.999 | t sim/wm/pi 1.3/9.4/15.3s
+it 32300 | 2.43 h | 2.1 it/s | updates 12888 | train_ret 0.748 (n=439) | wm nse1 0.0097 nse8 0.0202 | imag_ret 2.673 surv 0.999 | t sim/wm/pi 1.2/9.4/13.6s
+it 32350 | 2.44 h | 1.9 it/s | updates 12908 | train_ret 0.750 (n=436) | wm nse1 0.0096 nse8 0.0188 | imag_ret 2.670 surv 1.000 | t sim/wm/pi 1.2/9.7/14.9s
+it 32400 | 2.45 h | 2.0 it/s | updates 12928 | train_ret 0.764 (n=440) | wm nse1 0.0096 nse8 0.0163 | imag_ret 2.679 surv 0.999 | t sim/wm/pi 1.2/9.4/14.7s
+it 32450 | 2.46 h | 1.9 it/s | updates 12948 | train_ret 0.751 (n=420) | wm nse1 0.0095 nse8 0.0196 | imag_ret 2.681 surv 0.999 | t sim/wm/pi 1.3/9.3/15.5s
+it 32500 | 2.46 h | 2.1 it/s | updates 12968 | train_ret 0.743 (n=379) | wm nse1 0.0096 nse8 0.0193 | imag_ret 2.677 surv 1.000 | t sim/wm/pi 1.2/9.1/13.7s
+it 32550 | 2.47 h | 2.0 it/s | updates 12988 | train_ret 0.747 (n=411) | wm nse1 0.0095 nse8 0.0189 | imag_ret 2.680 surv 1.000 | t sim/wm/pi 1.2/9.5/14.7s
+it 32600 | 2.48 h | 2.0 it/s | updates 13008 | train_ret 0.754 (n=335) | wm nse1 0.0095 nse8 0.0145 | imag_ret 2.677 surv 1.000 | t sim/wm/pi 1.2/9.6/14.4s
+it 32650 | 2.48 h | 2.0 it/s | updates 13028 | train_ret 0.761 (n=384) | wm nse1 0.0095 nse8 0.0169 | imag_ret 2.682 surv 0.999 | t sim/wm/pi 1.2/9.6/14.7s
+it 32700 | 2.49 h | 2.0 it/s | updates 13048 | train_ret 0.762 (n=429) | wm nse1 0.0093 nse8 0.0164 | imag_ret 2.688 surv 1.000 | t sim/wm/pi 1.2/9.5/13.7s
+it 32750 | 2.50 h | 1.9 it/s | updates 13068 | train_ret 0.745 (n=411) | wm nse1 0.0094 nse8 0.0185 | imag_ret 2.683 surv 0.999 | t sim/wm/pi 1.2/9.4/15.3s
+it 32800 | 2.50 h | 2.0 it/s | updates 13088 | train_ret 0.757 (n=458) | wm nse1 0.0094 nse8 0.0193 | imag_ret 2.682 surv 0.999 | t sim/wm/pi 1.3/9.5/14.9s
+it 32850 | 2.51 h | 2.0 it/s | updates 13108 | train_ret 0.748 (n=465) | wm nse1 0.0095 nse8 0.0181 | imag_ret 2.682 surv 0.999 | t sim/wm/pi 1.2/9.6/14.6s
+it 32900 | 2.52 h | 2.2 it/s | updates 13128 | train_ret 0.755 (n=410) | wm nse1 0.0096 nse8 0.0216 | imag_ret 2.687 surv 1.000 | t sim/wm/pi 1.2/8.6/13.1s
+it 32950 | 2.52 h | 2.0 it/s | updates 13148 | train_ret 0.734 (n=502) | wm nse1 0.0095 nse8 0.0175 | imag_ret 2.686 surv 1.000 | t sim/wm/pi 1.2/9.0/14.7s
+it 33000 | 2.53 h | 2.0 it/s | updates 13168 | train_ret 0.752 (n=406) | wm nse1 0.0095 nse8 0.0184 | imag_ret 2.674 surv 0.999 | t sim/wm/pi 1.2/9.3/15.0s
+it 33050 | 2.54 h | 2.1 it/s | updates 13188 | train_ret 0.755 (n=410) | wm nse1 0.0096 nse8 0.0167 | imag_ret 2.676 surv 0.999 | t sim/wm/pi 1.2/8.7/13.5s
+it 33100 | 2.55 h | 1.9 it/s | updates 13208 | train_ret 0.752 (n=333) | wm nse1 0.0094 nse8 0.0172 | imag_ret 2.678 surv 0.999 | t sim/wm/pi 1.2/9.5/15.0s
+it 33150 | 2.55 h | 1.9 it/s | updates 13228 | train_ret 0.757 (n=345) | wm nse1 0.0095 nse8 0.0180 | imag_ret 2.680 surv 0.999 | t sim/wm/pi 1.2/9.4/15.1s
+it 33200 | 2.56 h | 1.9 it/s | updates 13248 | train_ret 0.764 (n=429) | wm nse1 0.0094 nse8 0.0179 | imag_ret 2.682 surv 0.999 | t sim/wm/pi 1.3/9.4/15.3s
+it 33250 | 2.57 h | 2.0 it/s | updates 13268 | train_ret 0.747 (n=395) | wm nse1 0.0096 nse8 0.0174 | imag_ret 2.679 surv 0.999 | t sim/wm/pi 1.3/9.4/14.0s
+it 33300 | 2.57 h | 1.9 it/s | updates 13288 | train_ret 0.752 (n=406) | wm nse1 0.0095 nse8 0.0179 | imag_ret 2.644 surv 0.999 | t sim/wm/pi 1.3/9.3/15.6s
+it 33350 | 2.58 h | 2.0 it/s | updates 13308 | train_ret 0.758 (n=410) | wm nse1 0.0095 nse8 0.0181 | imag_ret 2.659 surv 0.999 | t sim/wm/pi 1.3/9.1/15.2s
+it 33400 | 2.59 h | 1.9 it/s | updates 13328 | train_ret 0.745 (n=414) | wm nse1 0.0096 nse8 0.0190 | imag_ret 2.667 surv 0.999 | t sim/wm/pi 1.2/9.6/14.8s
+it 33450 | 2.59 h | 2.0 it/s | updates 13348 | train_ret 0.745 (n=508) | wm nse1 0.0095 nse8 0.0218 | imag_ret 2.663 surv 0.999 | t sim/wm/pi 1.2/9.5/14.0s
+it 33500 | 2.60 h | 1.9 it/s | updates 13368 | train_ret 0.748 (n=415) | wm nse1 0.0094 nse8 0.0157 | imag_ret 2.672 surv 0.999 | t sim/wm/pi 1.2/9.7/15.7s
+it 33550 | 2.61 h | 1.9 it/s | updates 13388 | train_ret 0.755 (n=387) | wm nse1 0.0096 nse8 0.0193 | imag_ret 2.674 surv 0.999 | t sim/wm/pi 1.3/9.3/15.4s
+it 33600 | 2.62 h | 1.9 it/s | updates 13408 | train_ret 0.749 (n=374) | wm nse1 0.0096 nse8 0.0232 | imag_ret 2.675 surv 1.000 | t sim/wm/pi 1.3/9.7/15.2s
+it 33650 | 2.62 h | 2.0 it/s | updates 13428 | train_ret 0.744 (n=378) | wm nse1 0.0095 nse8 0.0180 | imag_ret 2.675 surv 1.000 | t sim/wm/pi 1.2/9.5/13.9s
+it 33700 | 2.63 h | 2.2 it/s | updates 13448 | train_ret 0.755 (n=452) | wm nse1 0.0095 nse8 0.0167 | imag_ret 2.678 surv 1.000 | t sim/wm/pi 1.2/7.1/14.8s
+it 33750 | 2.64 h | 1.9 it/s | updates 13468 | train_ret 0.767 (n=382) | wm nse1 0.0093 nse8 0.0176 | imag_ret 2.681 surv 0.999 | t sim/wm/pi 1.2/9.3/15.3s
+it 33800 | 2.64 h | 2.1 it/s | updates 13488 | train_ret 0.745 (n=427) | wm nse1 0.0094 nse8 0.0151 | imag_ret 2.678 surv 0.999 | t sim/wm/pi 1.2/8.9/14.1s
+it 33850 | 2.65 h | 1.9 it/s | updates 13508 | train_ret 0.757 (n=424) | wm nse1 0.0094 nse8 0.0165 | imag_ret 2.677 surv 1.000 | t sim/wm/pi 1.3/9.5/15.3s
+it 33900 | 2.66 h | 2.0 it/s | updates 13528 | train_ret 0.762 (n=450) | wm nse1 0.0094 nse8 0.0155 | imag_ret 2.682 surv 1.000 | t sim/wm/pi 1.2/9.4/14.8s
+it 33950 | 2.67 h | 1.9 it/s | updates 13548 | train_ret 0.761 (n=457) | wm nse1 0.0092 nse8 0.0196 | imag_ret 2.688 surv 1.000 | t sim/wm/pi 1.2/9.6/15.0s
+it 34000 | 2.67 h | 2.0 it/s | updates 13568 | train_ret 0.750 (n=453) | wm nse1 0.0092 nse8 0.0155 | imag_ret 2.683 surv 1.000 | t sim/wm/pi 1.2/9.5/14.0s
+it 34050 | 2.68 h | 1.9 it/s | updates 13588 | train_ret 0.766 (n=379) | wm nse1 0.0092 nse8 0.0160 | imag_ret 2.690 surv 1.000 | t sim/wm/pi 1.2/9.4/15.3s
+it 34100 | 2.69 h | 1.9 it/s | updates 13608 | train_ret 0.769 (n=328) | wm nse1 0.0092 nse8 0.0158 | imag_ret 2.691 surv 1.000 | t sim/wm/pi 1.2/9.5/15.1s
+it 34150 | 2.69 h | 1.9 it/s | updates 13628 | train_ret 0.755 (n=351) | wm nse1 0.0092 nse8 0.0170 | imag_ret 2.688 surv 1.000 | t sim/wm/pi 1.2/9.5/15.3s
+it 34200 | 2.70 h | 2.1 it/s | updates 13648 | train_ret 0.755 (n=438) | wm nse1 0.0092 nse8 0.0194 | imag_ret 2.693 surv 1.000 | t sim/wm/pi 1.2/9.6/13.4s
+it 34250 | 2.71 h | 1.9 it/s | updates 13668 | train_ret 0.755 (n=452) | wm nse1 0.0092 nse8 0.0199 | imag_ret 2.693 surv 1.000 | t sim/wm/pi 1.2/9.2/15.3s
+it 34300 | 2.72 h | 1.9 it/s | updates 13688 | train_ret 0.771 (n=400) | wm nse1 0.0093 nse8 0.0173 | imag_ret 2.687 surv 1.000 | t sim/wm/pi 1.3/9.7/15.8s
+it 34350 | 2.72 h | 1.9 it/s | updates 13708 | train_ret 0.768 (n=424) | wm nse1 0.0092 nse8 0.0160 | imag_ret 2.685 surv 1.000 | t sim/wm/pi 1.4/9.6/15.6s
+it 34400 | 2.73 h | 2.0 it/s | updates 13728 | train_ret 0.769 (n=411) | wm nse1 0.0092 nse8 0.0155 | imag_ret 2.684 surv 1.000 | t sim/wm/pi 1.2/9.8/13.9s
+it 34450 | 2.74 h | 1.9 it/s | updates 13748 | train_ret 0.768 (n=430) | wm nse1 0.0093 nse8 0.0184 | imag_ret 2.684 surv 1.000 | t sim/wm/pi 1.2/9.3/15.4s
+it 34500 | 2.74 h | 1.9 it/s | updates 13768 | train_ret 0.755 (n=453) | wm nse1 0.0093 nse8 0.0153 | imag_ret 2.694 surv 1.000 | t sim/wm/pi 1.2/9.5/15.4s
+it 34550 | 2.75 h | 2.0 it/s | updates 13788 | train_ret 0.764 (n=380) | wm nse1 0.0093 nse8 0.0167 | imag_ret 2.691 surv 0.999 | t sim/wm/pi 1.3/9.2/14.1s
+it 34600 | 2.76 h | 1.9 it/s | updates 13808 | train_ret 0.747 (n=397) | wm nse1 0.0093 nse8 0.0182 | imag_ret 2.695 surv 1.000 | t sim/wm/pi 1.3/9.7/15.7s
+it 34650 | 2.77 h | 1.9 it/s | updates 13828 | train_ret 0.753 (n=364) | wm nse1 0.0093 nse8 0.0167 | imag_ret 2.689 surv 0.999 | t sim/wm/pi 1.2/9.5/15.6s
+it 34700 | 2.77 h | 1.9 it/s | updates 13848 | train_ret 0.755 (n=412) | wm nse1 0.0092 nse8 0.0173 | imag_ret 2.691 surv 1.000 | t sim/wm/pi 1.2/9.4/15.4s
+it 34750 | 2.78 h | 2.1 it/s | updates 13868 | train_ret 0.751 (n=426) | wm nse1 0.0094 nse8 0.0158 | imag_ret 2.685 surv 1.000 | t sim/wm/pi 1.3/9.3/13.8s
+it 34800 | 2.79 h | 1.9 it/s | updates 13888 | train_ret 0.750 (n=404) | wm nse1 0.0093 nse8 0.0169 | imag_ret 2.694 surv 0.999 | t sim/wm/pi 1.2/9.4/15.7s
+it 34850 | 2.79 h | 1.9 it/s | updates 13908 | train_ret 0.757 (n=481) | wm nse1 0.0092 nse8 0.0152 | imag_ret 2.689 surv 0.999 | t sim/wm/pi 1.2/9.5/15.6s
+it 34900 | 2.80 h | 1.9 it/s | updates 13928 | train_ret 0.754 (n=472) | wm nse1 0.0094 nse8 0.0184 | imag_ret 2.691 surv 1.000 | t sim/wm/pi 1.2/9.6/15.0s
+it 34950 | 2.81 h | 2.1 it/s | updates 13948 | train_ret 0.758 (n=481) | wm nse1 0.0092 nse8 0.0163 | imag_ret 2.697 surv 1.000 | t sim/wm/pi 1.2/9.6/13.3s
+it 35000 | 2.82 h | 2.0 it/s | updates 13968 | train_ret 0.761 (n=447) | wm nse1 0.0092 nse8 0.0180 | imag_ret 2.699 surv 1.000 | t sim/wm/pi 1.2/9.6/14.8s
+it 35050 | 2.82 h | 1.9 it/s | updates 13988 | train_ret 0.765 (n=394) | wm nse1 0.0093 nse8 0.0176 | imag_ret 2.699 surv 1.000 | t sim/wm/pi 1.2/9.5/15.1s
+it 35100 | 2.83 h | 1.9 it/s | updates 14008 | train_ret 0.761 (n=378) | wm nse1 0.0092 nse8 0.0186 | imag_ret 2.699 surv 1.000 | t sim/wm/pi 1.3/9.3/15.3s
+it 35150 | 2.84 h | 2.1 it/s | updates 14028 | train_ret 0.763 (n=373) | wm nse1 0.0092 nse8 0.0148 | imag_ret 2.699 surv 1.000 | t sim/wm/pi 1.2/9.5/13.3s
+it 35200 | 2.84 h | 2.0 it/s | updates 14048 | train_ret 0.766 (n=420) | wm nse1 0.0093 nse8 0.0163 | imag_ret 2.701 surv 0.999 | t sim/wm/pi 1.2/9.6/14.5s
+it 35250 | 2.85 h | 2.0 it/s | updates 14068 | train_ret 0.759 (n=450) | wm nse1 0.0092 nse8 0.0177 | imag_ret 2.696 surv 0.999 | t sim/wm/pi 1.2/9.5/14.6s
+it 35300 | 2.86 h | 2.0 it/s | updates 14088 | train_ret 0.770 (n=403) | wm nse1 0.0093 nse8 0.0169 | imag_ret 2.703 surv 1.000 | t sim/wm/pi 1.2/9.5/14.8s
+it 35350 | 2.86 h | 2.1 it/s | updates 14108 | train_ret 0.767 (n=409) | wm nse1 0.0093 nse8 0.0181 | imag_ret 2.701 surv 1.000 | t sim/wm/pi 1.2/9.0/13.6s
+it 35400 | 2.87 h | 2.0 it/s | updates 14128 | train_ret 0.762 (n=428) | wm nse1 0.0094 nse8 0.0165 | imag_ret 2.708 surv 1.000 | t sim/wm/pi 1.2/9.3/15.1s
+it 35450 | 2.88 h | 2.0 it/s | updates 14148 | train_ret 0.773 (n=424) | wm nse1 0.0093 nse8 0.0161 | imag_ret 2.704 surv 1.000 | t sim/wm/pi 1.2/9.6/14.5s
+it 35500 | 2.88 h | 2.1 it/s | updates 14168 | train_ret 0.771 (n=432) | wm nse1 0.0093 nse8 0.0180 | imag_ret 2.714 surv 1.000 | t sim/wm/pi 1.2/9.5/13.2s
+it 35550 | 2.89 h | 2.0 it/s | updates 14188 | train_ret 0.766 (n=405) | wm nse1 0.0094 nse8 0.0190 | imag_ret 2.708 surv 1.000 | t sim/wm/pi 1.2/9.3/14.9s
+it 35600 | 2.90 h | 1.9 it/s | updates 14208 | train_ret 0.763 (n=376) | wm nse1 0.0093 nse8 0.0189 | imag_ret 2.706 surv 1.000 | t sim/wm/pi 1.2/9.3/15.3s
+it 35650 | 2.91 h | 1.9 it/s | updates 14228 | train_ret 0.756 (n=381) | wm nse1 0.0093 nse8 0.0198 | imag_ret 2.709 surv 0.999 | t sim/wm/pi 1.2/9.5/15.0s
+it 35700 | 2.91 h | 2.1 it/s | updates 14248 | train_ret 0.758 (n=411) | wm nse1 0.0093 nse8 0.0159 | imag_ret 2.711 surv 0.999 | t sim/wm/pi 1.2/9.4/13.2s
+it 35750 | 2.92 h | 2.0 it/s | updates 14268 | train_ret 0.766 (n=435) | wm nse1 0.0093 nse8 0.0184 | imag_ret 2.709 surv 0.999 | t sim/wm/pi 1.2/9.7/14.7s
+it 35800 | 2.93 h | 2.0 it/s | updates 14288 | train_ret 0.747 (n=415) | wm nse1 0.0093 nse8 0.0197 | imag_ret 2.710 surv 1.000 | t sim/wm/pi 1.2/9.6/14.6s
+it 35850 | 2.93 h | 2.0 it/s | updates 14308 | train_ret 0.770 (n=441) | wm nse1 0.0093 nse8 0.0169 | imag_ret 2.710 surv 1.000 | t sim/wm/pi 1.2/9.2/15.1s
+it 35900 | 2.94 h | 2.2 it/s | updates 14328 | train_ret 0.764 (n=423) | wm nse1 0.0094 nse8 0.0182 | imag_ret 2.706 surv 0.999 | t sim/wm/pi 1.2/8.4/13.3s
+it 35950 | 2.95 h | 1.9 it/s | updates 14348 | train_ret 0.773 (n=458) | wm nse1 0.0093 nse8 0.0173 | imag_ret 2.709 surv 0.999 | t sim/wm/pi 1.2/9.4/15.0s
+it 36000 | 2.95 h | 2.0 it/s | updates 14368 | train_ret 0.758 (n=431) | wm nse1 0.0093 nse8 0.0187 | imag_ret 2.711 surv 1.000 | t sim/wm/pi 1.2/9.4/14.7s
+it 36050 | 2.96 h | 1.9 it/s | updates 14388 | train_ret 0.768 (n=424) | wm nse1 0.0093 nse8 0.0189 | imag_ret 2.706 surv 0.999 | t sim/wm/pi 1.2/9.5/14.9s
+it 36100 | 2.97 h | 2.1 it/s | updates 14408 | train_ret 0.765 (n=335) | wm nse1 0.0093 nse8 0.0171 | imag_ret 2.706 surv 1.000 | t sim/wm/pi 1.2/9.5/13.5s
+it 36150 | 2.98 h | 1.9 it/s | updates 14428 | train_ret 0.749 (n=379) | wm nse1 0.0092 nse8 0.0151 | imag_ret 2.705 surv 1.000 | t sim/wm/pi 1.2/9.6/15.2s
+it 36200 | 2.98 h | 2.0 it/s | updates 14448 | train_ret 0.767 (n=381) | wm nse1 0.0093 nse8 0.0166 | imag_ret 2.711 surv 1.000 | t sim/wm/pi 1.2/9.6/14.8s
+it 36250 | 2.99 h | 2.1 it/s | updates 14468 | train_ret 0.782 (n=397) | wm nse1 0.0092 nse8 0.0162 | imag_ret 2.715 surv 1.000 | t sim/wm/pi 1.2/9.6/13.4s
+it 36300 | 3.00 h | 2.0 it/s | updates 14488 | train_ret 0.759 (n=407) | wm nse1 0.0092 nse8 0.0156 | imag_ret 2.707 surv 1.000 | t sim/wm/pi 1.2/9.6/14.6s
+it 36350 | 3.00 h | 2.0 it/s | updates 14508 | train_ret 0.772 (n=433) | wm nse1 0.0092 nse8 0.0170 | imag_ret 2.708 surv 1.000 | t sim/wm/pi 1.2/9.3/14.7s
+it 36400 | 3.01 h | 1.9 it/s | updates 14528 | train_ret 0.764 (n=429) | wm nse1 0.0092 nse8 0.0182 | imag_ret 2.708 surv 0.999 | t sim/wm/pi 1.2/9.5/15.1s
+it 36450 | 3.02 h | 2.1 it/s | updates 14548 | train_ret 0.769 (n=452) | wm nse1 0.0092 nse8 0.0164 | imag_ret 2.712 surv 0.999 | t sim/wm/pi 1.2/9.5/13.5s
+it 36500 | 3.02 h | 2.0 it/s | updates 14568 | train_ret 0.761 (n=448) | wm nse1 0.0092 nse8 0.0184 | imag_ret 2.713 surv 1.000 | t sim/wm/pi 1.2/9.5/14.5s
+it 36550 | 3.03 h | 2.0 it/s | updates 14588 | train_ret 0.766 (n=456) | wm nse1 0.0091 nse8 0.0187 | imag_ret 2.720 surv 0.999 | t sim/wm/pi 1.2/9.5/14.7s
+it 36600 | 3.04 h | 2.0 it/s | updates 14608 | train_ret 0.766 (n=337) | wm nse1 0.0091 nse8 0.0166 | imag_ret 2.717 surv 0.999 | t sim/wm/pi 1.2/9.5/14.5s
+it 36650 | 3.05 h | 2.0 it/s | updates 14628 | train_ret 0.766 (n=358) | wm nse1 0.0090 nse8 0.0173 | imag_ret 2.718 surv 0.999 | t sim/wm/pi 1.2/9.6/13.7s
+it 36700 | 3.05 h | 2.0 it/s | updates 14648 | train_ret 0.762 (n=372) | wm nse1 0.0091 nse8 0.0152 | imag_ret 2.720 surv 1.000 | t sim/wm/pi 1.2/9.4/14.9s
+it 36750 | 3.06 h | 2.0 it/s | updates 14668 | train_ret 0.767 (n=448) | wm nse1 0.0090 nse8 0.0151 | imag_ret 2.716 surv 0.999 | t sim/wm/pi 1.2/9.5/14.5s
+it 36800 | 3.07 h | 2.0 it/s | updates 14688 | train_ret 0.765 (n=404) | wm nse1 0.0092 nse8 0.0165 | imag_ret 2.711 surv 1.000 | t sim/wm/pi 1.2/9.5/14.6s
+it 36850 | 3.07 h | 2.1 it/s | updates 14708 | train_ret 0.770 (n=407) | wm nse1 0.0092 nse8 0.0190 | imag_ret 2.697 surv 0.999 | t sim/wm/pi 1.2/9.5/13.2s
+it 36900 | 3.08 h | 2.0 it/s | updates 14728 | train_ret 0.763 (n=422) | wm nse1 0.0091 nse8 0.0153 | imag_ret 2.713 surv 1.000 | t sim/wm/pi 1.2/9.1/14.6s
+it 36950 | 3.09 h | 1.9 it/s | updates 14748 | train_ret 0.777 (n=424) | wm nse1 0.0091 nse8 0.0160 | imag_ret 2.719 surv 1.000 | t sim/wm/pi 1.3/9.3/15.1s
+it 37000 | 3.09 h | 2.1 it/s | updates 14768 | train_ret 0.765 (n=402) | wm nse1 0.0091 nse8 0.0162 | imag_ret 2.718 surv 1.000 | t sim/wm/pi 1.2/9.4/13.6s
+it 37050 | 3.10 h | 2.0 it/s | updates 14788 | train_ret 0.761 (n=442) | wm nse1 0.0093 nse8 0.0170 | imag_ret 2.716 surv 1.000 | t sim/wm/pi 1.2/9.1/14.6s
+it 37100 | 3.11 h | 2.0 it/s | updates 14808 | train_ret 0.764 (n=373) | wm nse1 0.0092 nse8 0.0162 | imag_ret 2.721 surv 0.999 | t sim/wm/pi 1.2/9.6/14.5s
+it 37150 | 3.12 h | 2.0 it/s | updates 14828 | train_ret 0.761 (n=380) | wm nse1 0.0091 nse8 0.0154 | imag_ret 2.719 surv 0.999 | t sim/wm/pi 1.2/9.1/14.9s
+it 37200 | 3.12 h | 2.1 it/s | updates 14848 | train_ret 0.770 (n=354) | wm nse1 0.0091 nse8 0.0223 | imag_ret 2.714 surv 1.000 | t sim/wm/pi 1.3/9.4/13.6s
+it 37250 | 3.13 h | 2.0 it/s | updates 14868 | train_ret 0.771 (n=414) | wm nse1 0.0092 nse8 0.0151 | imag_ret 2.720 surv 0.999 | t sim/wm/pi 1.2/9.3/14.8s
+it 37300 | 3.14 h | 2.0 it/s | updates 14888 | train_ret 0.773 (n=434) | wm nse1 0.0091 nse8 0.0202 | imag_ret 2.724 surv 0.999 | t sim/wm/pi 1.2/9.7/14.6s
+it 37350 | 3.14 h | 2.0 it/s | updates 14908 | train_ret 0.767 (n=425) | wm nse1 0.0091 nse8 0.0162 | imag_ret 2.724 surv 1.000 | t sim/wm/pi 1.2/9.2/14.7s
+it 37400 | 3.15 h | 2.1 it/s | updates 14928 | train_ret 0.768 (n=471) | wm nse1 0.0091 nse8 0.0149 | imag_ret 2.728 surv 0.999 | t sim/wm/pi 1.2/9.5/13.2s
+it 37450 | 3.16 h | 2.0 it/s | updates 14948 | train_ret 0.774 (n=423) | wm nse1 0.0091 nse8 0.0156 | imag_ret 2.725 surv 1.000 | t sim/wm/pi 1.2/8.9/15.1s
+it 37500 | 3.16 h | 2.0 it/s | updates 14968 | train_ret 0.761 (n=464) | wm nse1 0.0091 nse8 0.0163 | imag_ret 2.727 surv 1.000 | t sim/wm/pi 1.2/8.5/14.7s
+it 37550 | 3.17 h | 2.3 it/s | updates 14988 | train_ret 0.760 (n=439) | wm nse1 0.0090 nse8 0.0181 | imag_ret 2.723 surv 0.999 | t sim/wm/pi 1.2/8.0/12.9s
+it 37600 | 3.18 h | 2.0 it/s | updates 15008 | train_ret 0.769 (n=393) | wm nse1 0.0091 nse8 0.0187 | imag_ret 2.726 surv 1.000 | t sim/wm/pi 1.2/9.3/14.4s
+it 37650 | 3.18 h | 2.0 it/s | updates 15028 | train_ret 0.769 (n=367) | wm nse1 0.0091 nse8 0.0160 | imag_ret 2.729 surv 0.999 | t sim/wm/pi 1.2/8.8/14.6s
+it 37700 | 3.19 h | 2.0 it/s | updates 15048 | train_ret 0.767 (n=379) | wm nse1 0.0090 nse8 0.0169 | imag_ret 2.725 surv 0.999 | t sim/wm/pi 1.2/9.1/14.7s
+it 37750 | 3.20 h | 2.1 it/s | updates 15068 | train_ret 0.766 (n=401) | wm nse1 0.0091 nse8 0.0186 | imag_ret 2.723 surv 1.000 | t sim/wm/pi 1.2/9.1/13.6s
+it 37800 | 3.20 h | 2.1 it/s | updates 15088 | train_ret 0.768 (n=419) | wm nse1 0.0093 nse8 0.0162 | imag_ret 2.728 surv 0.999 | t sim/wm/pi 1.2/8.4/14.6s
+it 37850 | 3.21 h | 2.0 it/s | updates 15108 | train_ret 0.773 (n=419) | wm nse1 0.0092 nse8 0.0218 | imag_ret 2.725 surv 0.999 | t sim/wm/pi 1.2/9.5/14.5s
+it 37900 | 3.22 h | 2.0 it/s | updates 15128 | train_ret 0.748 (n=421) | wm nse1 0.0092 nse8 0.0171 | imag_ret 2.725 surv 0.999 | t sim/wm/pi 1.2/9.4/14.5s
+it 37950 | 3.22 h | 2.1 it/s | updates 15148 | train_ret 0.760 (n=415) | wm nse1 0.0093 nse8 0.0189 | imag_ret 2.729 surv 0.999 | t sim/wm/pi 1.2/9.5/13.3s
+it 38000 | 3.23 h | 1.9 it/s | updates 15168 | train_ret 0.758 (n=448) | wm nse1 0.0094 nse8 0.0178 | imag_ret 2.732 surv 0.999 | t sim/wm/pi 1.3/9.4/15.0s
+it 38050 | 3.24 h | 1.9 it/s | updates 15188 | train_ret 0.770 (n=410) | wm nse1 0.0093 nse8 0.0175 | imag_ret 2.726 surv 0.999 | t sim/wm/pi 1.2/9.6/14.9s
+it 38100 | 3.25 h | 2.0 it/s | updates 15208 | train_ret 0.761 (n=415) | wm nse1 0.0093 nse8 0.0209 | imag_ret 2.723 surv 0.999 | t sim/wm/pi 1.2/9.4/14.7s
+it 38150 | 3.25 h | 2.1 it/s | updates 15228 | train_ret 0.766 (n=352) | wm nse1 0.0093 nse8 0.0190 | imag_ret 2.724 surv 0.999 | t sim/wm/pi 1.2/9.5/13.4s
+it 38200 | 3.26 h | 2.0 it/s | updates 15248 | train_ret 0.774 (n=387) | wm nse1 0.0094 nse8 0.0172 | imag_ret 2.717 surv 0.999 | t sim/wm/pi 1.2/9.5/14.6s
+it 38250 | 3.27 h | 1.9 it/s | updates 15268 | train_ret 0.760 (n=445) | wm nse1 0.0094 nse8 0.0180 | imag_ret 2.720 surv 0.999 | t sim/wm/pi 1.2/9.4/15.1s
+it 38300 | 3.27 h | 2.1 it/s | updates 15288 | train_ret 0.757 (n=424) | wm nse1 0.0095 nse8 0.0166 | imag_ret 2.714 surv 0.999 | t sim/wm/pi 1.3/9.3/13.6s
+it 38350 | 3.28 h | 2.0 it/s | updates 15308 | train_ret 0.754 (n=450) | wm nse1 0.0095 nse8 0.0263 | imag_ret 2.717 surv 0.999 | t sim/wm/pi 1.2/9.3/14.5s
+it 38400 | 3.29 h | 2.0 it/s | updates 15328 | train_ret 0.755 (n=428) | wm nse1 0.0096 nse8 0.0178 | imag_ret 2.719 surv 0.999 | t sim/wm/pi 1.2/9.6/14.7s
+it 38450 | 3.29 h | 2.0 it/s | updates 15348 | train_ret 0.764 (n=375) | wm nse1 0.0094 nse8 0.0203 | imag_ret 2.723 surv 0.999 | t sim/wm/pi 1.2/9.5/14.8s
+it 38500 | 3.30 h | 2.3 it/s | updates 15368 | train_ret 0.756 (n=462) | wm nse1 0.0096 nse8 0.0169 | imag_ret 2.719 surv 0.999 | t sim/wm/pi 1.2/7.6/12.9s
+it 38550 | 3.31 h | 2.4 it/s | updates 15388 | train_ret 0.743 (n=440) | wm nse1 0.0095 nse8 0.0178 | imag_ret 2.714 surv 0.999 | t sim/wm/pi 1.2/5.4/13.9s
+it 38600 | 3.31 h | 2.0 it/s | updates 15408 | train_ret 0.774 (n=427) | wm nse1 0.0095 nse8 0.0185 | imag_ret 2.718 surv 0.999 | t sim/wm/pi 1.2/9.4/14.7s
+it 38650 | 3.32 h | 2.0 it/s | updates 15428 | train_ret 0.771 (n=355) | wm nse1 0.0096 nse8 0.0220 | imag_ret 2.720 surv 0.999 | t sim/wm/pi 1.2/9.2/14.5s
+it 38700 | 3.33 h | 2.1 it/s | updates 15448 | train_ret 0.759 (n=391) | wm nse1 0.0096 nse8 0.0181 | imag_ret 2.725 surv 0.999 | t sim/wm/pi 1.2/9.3/13.2s
+it 38750 | 3.33 h | 2.0 it/s | updates 15468 | train_ret 0.771 (n=369) | wm nse1 0.0095 nse8 0.0191 | imag_ret 2.724 surv 0.999 | t sim/wm/pi 1.2/9.4/14.6s
+it 38800 | 3.34 h | 2.0 it/s | updates 15488 | train_ret 0.775 (n=417) | wm nse1 0.0094 nse8 0.0179 | imag_ret 2.720 surv 0.999 | t sim/wm/pi 1.2/9.3/14.8s
+it 38850 | 3.35 h | 1.9 it/s | updates 15508 | train_ret 0.766 (n=445) | wm nse1 0.0096 nse8 0.0180 | imag_ret 2.721 surv 0.999 | t sim/wm/pi 1.2/9.6/14.9s
+it 38900 | 3.35 h | 2.1 it/s | updates 15528 | train_ret 0.768 (n=455) | wm nse1 0.0094 nse8 0.0173 | imag_ret 2.716 surv 0.999 | t sim/wm/pi 1.2/9.1/13.1s
+it 38950 | 3.36 h | 2.0 it/s | updates 15548 | train_ret 0.753 (n=393) | wm nse1 0.0095 nse8 0.0188 | imag_ret 2.723 surv 0.999 | t sim/wm/pi 1.2/9.5/14.8s
+it 39000 | 3.37 h | 2.0 it/s | updates 15568 | train_ret 0.776 (n=423) | wm nse1 0.0094 nse8 0.0191 | imag_ret 2.722 surv 0.999 | t sim/wm/pi 1.2/9.4/14.6s
+it 39050 | 3.38 h | 2.1 it/s | updates 15588 | train_ret 0.768 (n=421) | wm nse1 0.0094 nse8 0.0181 | imag_ret 2.719 surv 0.999 | t sim/wm/pi 1.2/9.6/13.4s
+it 39100 | 3.38 h | 1.9 it/s | updates 15608 | train_ret 0.770 (n=464) | wm nse1 0.0093 nse8 0.0160 | imag_ret 2.716 surv 0.999 | t sim/wm/pi 1.2/9.4/15.1s
+it 39150 | 3.39 h | 2.0 it/s | updates 15628 | train_ret 0.768 (n=347) | wm nse1 0.0092 nse8 0.0170 | imag_ret 2.719 surv 0.999 | t sim/wm/pi 1.2/9.6/14.7s
+it 39200 | 3.40 h | 2.0 it/s | updates 15648 | train_ret 0.767 (n=408) | wm nse1 0.0093 nse8 0.0172 | imag_ret 2.716 surv 0.999 | t sim/wm/pi 1.2/9.5/14.5s
+it 39250 | 3.40 h | 2.1 it/s | updates 15668 | train_ret 0.767 (n=352) | wm nse1 0.0092 nse8 0.0170 | imag_ret 2.715 surv 0.999 | t sim/wm/pi 1.2/9.6/13.2s
+it 39300 | 3.41 h | 2.0 it/s | updates 15688 | train_ret 0.764 (n=421) | wm nse1 0.0091 nse8 0.0183 | imag_ret 2.720 surv 0.999 | t sim/wm/pi 1.2/9.4/14.8s
+it 39350 | 3.42 h | 1.9 it/s | updates 15708 | train_ret 0.766 (n=440) | wm nse1 0.0092 nse8 0.0191 | imag_ret 2.727 surv 0.999 | t sim/wm/pi 1.2/9.5/15.0s
+it 39400 | 3.42 h | 2.0 it/s | updates 15728 | train_ret 0.768 (n=465) | wm nse1 0.0091 nse8 0.0175 | imag_ret 2.730 surv 0.999 | t sim/wm/pi 1.2/9.5/14.7s
+it 39450 | 3.43 h | 2.1 it/s | updates 15748 | train_ret 0.768 (n=408) | wm nse1 0.0091 nse8 0.0170 | imag_ret 2.730 surv 0.999 | t sim/wm/pi 1.2/9.6/13.1s
+it 39500 | 3.44 h | 2.0 it/s | updates 15768 | train_ret 0.767 (n=439) | wm nse1 0.0091 nse8 0.0201 | imag_ret 2.729 surv 0.999 | t sim/wm/pi 1.2/9.4/14.4s
+it 39550 | 3.44 h | 2.0 it/s | updates 15788 | train_ret 0.766 (n=376) | wm nse1 0.0091 nse8 0.0158 | imag_ret 2.731 surv 1.000 | t sim/wm/pi 1.2/9.4/14.6s
+it 39600 | 3.45 h | 2.1 it/s | updates 15808 | train_ret 0.768 (n=463) | wm nse1 0.0091 nse8 0.0168 | imag_ret 2.728 surv 1.000 | t sim/wm/pi 1.2/9.2/13.6s
+it 39650 | 3.46 h | 1.9 it/s | updates 15828 | train_ret 0.766 (n=370) | wm nse1 0.0091 nse8 0.0151 | imag_ret 2.729 surv 0.999 | t sim/wm/pi 1.2/9.3/15.2s
+it 39700 | 3.47 h | 2.0 it/s | updates 15848 | train_ret 0.759 (n=390) | wm nse1 0.0092 nse8 0.0182 | imag_ret 2.729 surv 1.000 | t sim/wm/pi 1.2/9.6/14.4s
+it 39750 | 3.47 h | 2.0 it/s | updates 15868 | train_ret 0.756 (n=370) | wm nse1 0.0092 nse8 0.0163 | imag_ret 2.726 surv 0.999 | t sim/wm/pi 1.2/9.5/14.6s
+it 39800 | 3.48 h | 2.1 it/s | updates 15888 | train_ret 0.747 (n=449) | wm nse1 0.0093 nse8 0.0184 | imag_ret 2.729 surv 0.999 | t sim/wm/pi 1.2/9.4/13.0s
+it 39850 | 3.49 h | 2.0 it/s | updates 15908 | train_ret 0.747 (n=418) | wm nse1 0.0093 nse8 0.0175 | imag_ret 2.722 surv 0.999 | t sim/wm/pi 1.2/9.1/15.0s
+it 39900 | 3.49 h | 1.9 it/s | updates 15928 | train_ret 0.753 (n=447) | wm nse1 0.0093 nse8 0.0190 | imag_ret 2.724 surv 0.999 | t sim/wm/pi 1.2/9.4/15.1s
+it 39950 | 3.50 h | 2.0 it/s | updates 15948 | train_ret 0.730 (n=402) | wm nse1 0.0093 nse8 0.0189 | imag_ret 2.729 surv 0.999 | t sim/wm/pi 1.2/9.6/14.5s
+it 40000 | 3.51 h | 2.3 it/s | updates 15968 | train_ret 0.724 (n=438) | wm nse1 0.0095 nse8 0.0209 | imag_ret 2.730 surv 0.999 | t sim/wm/pi 1.2/7.6/12.9s
+it 40050 | 3.51 h | 1.9 it/s | updates 15988 | train_ret 0.711 (n=406) | wm nse1 0.0095 nse8 0.0188 | imag_ret 2.726 surv 0.999 | t sim/wm/pi 1.2/9.7/14.5s
+it 40100 | 3.52 h | 2.0 it/s | updates 16008 | train_ret 0.719 (n=414) | wm nse1 0.0097 nse8 0.0167 | imag_ret 2.719 surv 0.999 | t sim/wm/pi 1.2/9.5/14.7s
+it 40150 | 3.53 h | 1.9 it/s | updates 16028 | train_ret 0.731 (n=322) | wm nse1 0.0098 nse8 0.0165 | imag_ret 2.722 surv 0.999 | t sim/wm/pi 1.2/9.5/15.2s
+it 40200 | 3.53 h | 2.1 it/s | updates 16048 | train_ret 0.683 (n=393) | wm nse1 0.0097 nse8 0.0213 | imag_ret 2.715 surv 0.998 | t sim/wm/pi 1.2/9.6/13.4s
+it 40250 | 3.54 h | 2.2 it/s | updates 16068 | train_ret 0.666 (n=360) | wm nse1 0.0096 nse8 0.0167 | imag_ret 2.716 surv 0.999 | t sim/wm/pi 1.2/7.6/14.4s
+it 40300 | 3.55 h | 2.1 it/s | updates 16088 | train_ret 0.697 (n=363) | wm nse1 0.0100 nse8 0.0238 | imag_ret 2.716 surv 0.998 | t sim/wm/pi 1.2/8.3/14.2s
+it 40350 | 3.55 h | 2.4 it/s | updates 16108 | train_ret 0.685 (n=440) | wm nse1 0.0101 nse8 0.0186 | imag_ret 2.713 surv 0.998 | t sim/wm/pi 1.2/5.6/13.8s
+it 40400 | 3.56 h | 2.4 it/s | updates 16128 | train_ret 0.698 (n=423) | wm nse1 0.0102 nse8 0.0225 | imag_ret 2.705 surv 0.998 | t sim/wm/pi 1.2/6.6/12.8s
+it 40450 | 3.57 h | 2.0 it/s | updates 16148 | train_ret 0.693 (n=405) | wm nse1 0.0104 nse8 0.0194 | imag_ret 2.707 surv 0.998 | t sim/wm/pi 1.2/8.9/15.3s
+it 40500 | 3.57 h | 2.0 it/s | updates 16168 | train_ret 0.726 (n=414) | wm nse1 0.0104 nse8 0.0201 | imag_ret 2.695 surv 0.998 | t sim/wm/pi 1.2/9.7/14.4s
+it 40550 | 3.58 h | 2.1 it/s | updates 16188 | train_ret 0.709 (n=412) | wm nse1 0.0105 nse8 0.0207 | imag_ret 2.697 surv 0.998 | t sim/wm/pi 1.2/9.4/13.3s
+it 40600 | 3.59 h | 2.0 it/s | updates 16208 | train_ret 0.733 (n=399) | wm nse1 0.0106 nse8 0.0224 | imag_ret 2.703 surv 0.998 | t sim/wm/pi 1.2/9.4/14.5s
+it 40650 | 3.59 h | 2.0 it/s | updates 16228 | train_ret 0.707 (n=367) | wm nse1 0.0105 nse8 0.0183 | imag_ret 2.702 surv 0.998 | t sim/wm/pi 1.2/9.4/14.6s
+it 40700 | 3.60 h | 1.9 it/s | updates 16248 | train_ret 0.737 (n=367) | wm nse1 0.0103 nse8 0.0221 | imag_ret 2.697 surv 0.997 | t sim/wm/pi 1.2/9.6/15.0s
+it 40750 | 3.61 h | 2.1 it/s | updates 16268 | train_ret 0.766 (n=410) | wm nse1 0.0104 nse8 0.0192 | imag_ret 2.706 surv 0.998 | t sim/wm/pi 1.2/9.6/13.4s
+it 40800 | 3.61 h | 2.0 it/s | updates 16288 | train_ret 0.748 (n=401) | wm nse1 0.0104 nse8 0.0207 | imag_ret 2.709 surv 0.998 | t sim/wm/pi 1.2/9.6/14.3s
+it 40850 | 3.62 h | 2.0 it/s | updates 16308 | train_ret 0.773 (n=437) | wm nse1 0.0103 nse8 0.0221 | imag_ret 2.710 surv 0.998 | t sim/wm/pi 1.2/9.3/14.5s
+it 40900 | 3.63 h | 2.0 it/s | updates 16328 | train_ret 0.758 (n=461) | wm nse1 0.0101 nse8 0.0199 | imag_ret 2.709 surv 0.997 | t sim/wm/pi 1.2/9.4/14.7s
+it 40950 | 3.64 h | 2.0 it/s | updates 16348 | train_ret 0.771 (n=432) | wm nse1 0.0102 nse8 0.0256 | imag_ret 2.715 surv 0.998 | t sim/wm/pi 1.2/9.6/13.6s
+it 41000 | 3.64 h | 1.9 it/s | updates 16368 | train_ret 0.760 (n=442) | wm nse1 0.0100 nse8 0.0213 | imag_ret 2.712 surv 0.998 | t sim/wm/pi 1.2/9.7/14.8s
+it 41050 | 3.65 h | 2.0 it/s | updates 16388 | train_ret 0.760 (n=433) | wm nse1 0.0100 nse8 0.0219 | imag_ret 2.714 surv 0.998 | t sim/wm/pi 1.2/9.6/14.7s
+it 41100 | 3.66 h | 2.1 it/s | updates 16408 | train_ret 0.763 (n=429) | wm nse1 0.0100 nse8 0.0185 | imag_ret 2.710 surv 0.999 | t sim/wm/pi 1.2/9.7/13.2s
+it 41150 | 3.66 h | 2.0 it/s | updates 16428 | train_ret 0.771 (n=383) | wm nse1 0.0098 nse8 0.0170 | imag_ret 2.718 surv 0.999 | t sim/wm/pi 1.2/9.6/14.4s
+it 41200 | 3.67 h | 2.1 it/s | updates 16448 | train_ret 0.775 (n=391) | wm nse1 0.0097 nse8 0.0235 | imag_ret 2.717 surv 0.999 | t sim/wm/pi 1.2/7.7/14.5s
+it 41250 | 3.68 h | 2.0 it/s | updates 16468 | train_ret 0.773 (n=398) | wm nse1 0.0098 nse8 0.0227 | imag_ret 2.716 surv 0.998 | t sim/wm/pi 1.2/9.0/15.1s
+it 41300 | 3.68 h | 2.1 it/s | updates 16488 | train_ret 0.770 (n=364) | wm nse1 0.0096 nse8 0.0181 | imag_ret 2.719 surv 0.999 | t sim/wm/pi 1.2/9.6/13.3s
+it 41350 | 3.69 h | 2.0 it/s | updates 16508 | train_ret 0.779 (n=403) | wm nse1 0.0096 nse8 0.0187 | imag_ret 2.730 surv 0.999 | t sim/wm/pi 1.2/9.5/14.7s
+it 41400 | 3.70 h | 2.0 it/s | updates 16528 | train_ret 0.767 (n=423) | wm nse1 0.0094 nse8 0.0164 | imag_ret 2.727 surv 0.999 | t sim/wm/pi 1.2/9.6/14.7s
+it 41450 | 3.70 h | 2.1 it/s | updates 16548 | train_ret 0.767 (n=431) | wm nse1 0.0094 nse8 0.0218 | imag_ret 2.732 surv 0.999 | t sim/wm/pi 1.2/8.1/14.7s
+it 41500 | 3.71 h | 2.0 it/s | updates 16568 | train_ret 0.760 (n=430) | wm nse1 0.0093 nse8 0.0172 | imag_ret 2.732 surv 0.999 | t sim/wm/pi 1.2/9.5/13.6s
+it 41550 | 3.72 h | 2.0 it/s | updates 16588 | train_ret 0.771 (n=415) | wm nse1 0.0093 nse8 0.0187 | imag_ret 2.729 surv 0.999 | t sim/wm/pi 1.2/9.1/14.9s
+it 41600 | 3.73 h | 2.0 it/s | updates 16608 | train_ret 0.767 (n=487) | wm nse1 0.0092 nse8 0.0135 | imag_ret 2.740 surv 0.999 | t sim/wm/pi 1.2/9.7/14.6s
+it 41650 | 3.73 h | 2.0 it/s | updates 16628 | train_ret 0.757 (n=429) | wm nse1 0.0092 nse8 0.0156 | imag_ret 2.746 surv 0.999 | t sim/wm/pi 1.2/9.6/14.7s
+it 41700 | 3.74 h | 2.1 it/s | updates 16648 | train_ret 0.775 (n=409) | wm nse1 0.0091 nse8 0.0200 | imag_ret 2.747 surv 0.999 | t sim/wm/pi 1.2/9.4/13.3s
+it 41750 | 3.75 h | 1.9 it/s | updates 16668 | train_ret 0.778 (n=402) | wm nse1 0.0091 nse8 0.0164 | imag_ret 2.743 surv 0.999 | t sim/wm/pi 1.2/9.5/15.1s
+it 41800 | 3.75 h | 1.9 it/s | updates 16688 | train_ret 0.768 (n=386) | wm nse1 0.0090 nse8 0.0162 | imag_ret 2.747 surv 1.000 | t sim/wm/pi 1.2/9.4/15.2s
+it 41850 | 3.76 h | 2.1 it/s | updates 16708 | train_ret 0.776 (n=431) | wm nse1 0.0090 nse8 0.0184 | imag_ret 2.752 surv 1.000 | t sim/wm/pi 1.2/9.6/13.2s
+it 41900 | 3.77 h | 2.1 it/s | updates 16728 | train_ret 0.778 (n=427) | wm nse1 0.0090 nse8 0.0169 | imag_ret 2.743 surv 0.999 | t sim/wm/pi 1.2/8.5/14.6s
+it 41950 | 3.77 h | 2.2 it/s | updates 16748 | train_ret 0.775 (n=424) | wm nse1 0.0091 nse8 0.0218 | imag_ret 2.747 surv 1.000 | t sim/wm/pi 1.2/7.3/14.3s
+it 42000 | 3.78 h | 1.9 it/s | updates 16768 | train_ret 0.769 (n=433) | wm nse1 0.0091 nse8 0.0182 | imag_ret 2.751 surv 1.000 | t sim/wm/pi 1.2/9.8/15.1s
+it 42050 | 3.79 h | 2.0 it/s | updates 16788 | train_ret 0.769 (n=393) | wm nse1 0.0091 nse8 0.0158 | imag_ret 2.748 surv 1.000 | t sim/wm/pi 1.2/9.6/13.6s
+it 42100 | 3.79 h | 2.0 it/s | updates 16808 | train_ret 0.776 (n=431) | wm nse1 0.0091 nse8 0.0162 | imag_ret 2.753 surv 1.000 | t sim/wm/pi 1.2/9.6/14.7s
+it 42150 | 3.80 h | 2.0 it/s | updates 16828 | train_ret 0.773 (n=395) | wm nse1 0.0091 nse8 0.0220 | imag_ret 2.751 surv 0.999 | t sim/wm/pi 1.2/9.5/14.8s
+it 42200 | 3.81 h | 2.0 it/s | updates 16848 | train_ret 0.759 (n=438) | wm nse1 0.0091 nse8 0.0169 | imag_ret 2.748 surv 1.000 | t sim/wm/pi 1.2/9.5/14.5s
+it 42250 | 3.82 h | 2.1 it/s | updates 16868 | train_ret 0.783 (n=383) | wm nse1 0.0092 nse8 0.0181 | imag_ret 2.749 surv 1.000 | t sim/wm/pi 1.2/9.4/13.4s
+it 42300 | 3.82 h | 1.9 it/s | updates 16888 | train_ret 0.771 (n=359) | wm nse1 0.0091 nse8 0.0166 | imag_ret 2.725 surv 1.000 | t sim/wm/pi 1.3/9.7/15.2s
+it 42350 | 3.83 h | 2.0 it/s | updates 16908 | train_ret 0.758 (n=465) | wm nse1 0.0091 nse8 0.0153 | imag_ret 2.742 surv 0.999 | t sim/wm/pi 1.2/9.5/14.7s
+it 42400 | 3.84 h | 2.0 it/s | updates 16928 | train_ret 0.769 (n=410) | wm nse1 0.0091 nse8 0.0163 | imag_ret 2.743 surv 1.000 | t sim/wm/pi 1.2/9.4/14.7s
+it 42450 | 3.84 h | 2.1 it/s | updates 16948 | train_ret 0.758 (n=441) | wm nse1 0.0092 nse8 0.0178 | imag_ret 2.744 surv 1.000 | t sim/wm/pi 1.2/9.2/13.2s
+it 42500 | 3.85 h | 1.9 it/s | updates 16968 | train_ret 0.766 (n=427) | wm nse1 0.0093 nse8 0.0188 | imag_ret 2.748 surv 0.999 | t sim/wm/pi 1.2/9.6/14.9s
+it 42550 | 3.86 h | 1.9 it/s | updates 16988 | train_ret 0.765 (n=396) | wm nse1 0.0094 nse8 0.0190 | imag_ret 2.748 surv 0.999 | t sim/wm/pi 1.2/9.5/15.0s
+it 42600 | 3.86 h | 2.1 it/s | updates 17008 | train_ret 0.761 (n=453) | wm nse1 0.0094 nse8 0.0162 | imag_ret 2.739 surv 1.000 | t sim/wm/pi 1.3/9.5/13.4s
+it 42650 | 3.87 h | 2.0 it/s | updates 17028 | train_ret 0.771 (n=328) | wm nse1 0.0093 nse8 0.0175 | imag_ret 2.735 surv 1.000 | t sim/wm/pi 1.2/9.2/14.8s
+it 42700 | 3.88 h | 2.0 it/s | updates 17048 | train_ret 0.760 (n=417) | wm nse1 0.0093 nse8 0.0207 | imag_ret 2.742 surv 1.000 | t sim/wm/pi 1.2/9.4/14.5s
+it 42750 | 3.89 h | 2.0 it/s | updates 17068 | train_ret 0.755 (n=419) | wm nse1 0.0093 nse8 0.0167 | imag_ret 2.741 surv 1.000 | t sim/wm/pi 1.2/9.5/14.7s
+it 42800 | 3.89 h | 2.0 it/s | updates 17088 | train_ret 0.756 (n=381) | wm nse1 0.0094 nse8 0.0171 | imag_ret 2.736 surv 0.999 | t sim/wm/pi 1.2/9.6/13.8s
+it 42850 | 3.90 h | 1.9 it/s | updates 17108 | train_ret 0.762 (n=442) | wm nse1 0.0095 nse8 0.0172 | imag_ret 2.743 surv 0.999 | t sim/wm/pi 1.2/9.6/15.0s
+it 42900 | 3.91 h | 2.0 it/s | updates 17128 | train_ret 0.776 (n=408) | wm nse1 0.0094 nse8 0.0186 | imag_ret 2.746 surv 0.999 | t sim/wm/pi 1.2/9.5/14.5s
+it 42950 | 3.91 h | 2.0 it/s | updates 17148 | train_ret 0.783 (n=408) | wm nse1 0.0093 nse8 0.0156 | imag_ret 2.742 surv 1.000 | t sim/wm/pi 1.2/9.3/14.7s
+it 43000 | 3.92 h | 2.1 it/s | updates 17168 | train_ret 0.767 (n=481) | wm nse1 0.0092 nse8 0.0150 | imag_ret 2.746 surv 1.000 | t sim/wm/pi 1.2/9.7/13.3s
+it 43050 | 3.93 h | 1.9 it/s | updates 17188 | train_ret 0.777 (n=406) | wm nse1 0.0093 nse8 0.0153 | imag_ret 2.746 surv 0.999 | t sim/wm/pi 1.3/9.5/15.0s
+it 43100 | 3.93 h | 1.9 it/s | updates 17208 | train_ret 0.784 (n=466) | wm nse1 0.0094 nse8 0.0175 | imag_ret 2.740 surv 1.000 | t sim/wm/pi 1.2/9.6/15.2s
+it 43150 | 3.94 h | 2.1 it/s | updates 17228 | train_ret 0.760 (n=418) | wm nse1 0.0092 nse8 0.0170 | imag_ret 2.743 surv 0.999 | t sim/wm/pi 1.2/9.6/13.2s
+it 43200 | 3.95 h | 2.0 it/s | updates 17248 | train_ret 0.773 (n=404) | wm nse1 0.0092 nse8 0.0158 | imag_ret 2.745 surv 0.999 | t sim/wm/pi 1.2/9.6/14.6s
+it 43250 | 3.95 h | 2.1 it/s | updates 17268 | train_ret 0.775 (n=417) | wm nse1 0.0092 nse8 0.0165 | imag_ret 2.743 surv 0.999 | t sim/wm/pi 1.2/8.2/14.3s
+it 43300 | 3.96 h | 2.3 it/s | updates 17288 | train_ret 0.770 (n=406) | wm nse1 0.0093 nse8 0.0180 | imag_ret 2.744 surv 1.000 | t sim/wm/pi 1.2/5.8/14.3s
+it 43350 | 3.97 h | 2.0 it/s | updates 17308 | train_ret 0.773 (n=388) | wm nse1 0.0092 nse8 0.0186 | imag_ret 2.746 surv 1.000 | t sim/wm/pi 1.2/9.3/14.0s
+it 43400 | 3.97 h | 1.9 it/s | updates 17328 | train_ret 0.772 (n=400) | wm nse1 0.0092 nse8 0.0325 | imag_ret 2.751 surv 0.999 | t sim/wm/pi 1.2/9.6/14.8s
+it 43450 | 3.98 h | 2.0 it/s | updates 17348 | train_ret 0.779 (n=402) | wm nse1 0.0092 nse8 0.0193 | imag_ret 2.753 surv 1.000 | t sim/wm/pi 1.2/9.6/14.7s
+it 43500 | 3.99 h | 2.0 it/s | updates 17368 | train_ret 0.777 (n=435) | wm nse1 0.0091 nse8 0.0184 | imag_ret 2.748 surv 1.000 | t sim/wm/pi 1.2/9.6/14.8s
+it 43550 | 4.00 h | 2.1 it/s | updates 17388 | train_ret 0.774 (n=438) | wm nse1 0.0091 nse8 0.0173 | imag_ret 2.741 surv 0.999 | t sim/wm/pi 1.2/9.6/13.5s
+it 43600 | 4.00 h | 1.9 it/s | updates 17408 | train_ret 0.772 (n=412) | wm nse1 0.0092 nse8 0.0161 | imag_ret 2.745 surv 0.999 | t sim/wm/pi 1.2/9.2/15.3s
+it 43650 | 4.01 h | 2.0 it/s | updates 17428 | train_ret 0.761 (n=431) | wm nse1 0.0091 nse8 0.0161 | imag_ret 2.751 surv 1.000 | t sim/wm/pi 1.2/9.3/15.0s
+it 43700 | 4.02 h | 2.0 it/s | updates 17448 | train_ret 0.775 (n=413) | wm nse1 0.0091 nse8 0.0163 | imag_ret 2.749 surv 1.000 | t sim/wm/pi 1.2/9.5/14.8s
+it 43750 | 4.02 h | 2.1 it/s | updates 17468 | train_ret 0.765 (n=424) | wm nse1 0.0092 nse8 0.0162 | imag_ret 2.755 surv 1.000 | t sim/wm/pi 1.2/9.2/13.1s
+it 43800 | 4.03 h | 2.0 it/s | updates 17488 | train_ret 0.772 (n=361) | wm nse1 0.0092 nse8 0.0155 | imag_ret 2.752 surv 0.999 | t sim/wm/pi 1.2/9.0/14.5s
+it 43850 | 4.04 h | 2.4 it/s | updates 17508 | train_ret 0.772 (n=459) | wm nse1 0.0090 nse8 0.0158 | imag_ret 2.748 surv 1.000 | t sim/wm/pi 1.1/5.5/14.0s
+it 43900 | 4.04 h | 2.1 it/s | updates 17528 | train_ret 0.759 (n=411) | wm nse1 0.0091 nse8 0.0157 | imag_ret 2.747 surv 1.000 | t sim/wm/pi 1.2/9.0/13.5s
+it 43950 | 4.05 h | 2.0 it/s | updates 17548 | train_ret 0.769 (n=423) | wm nse1 0.0091 nse8 0.0160 | imag_ret 2.756 surv 1.000 | t sim/wm/pi 1.2/9.2/14.7s
+it 44000 | 4.06 h | 2.0 it/s | updates 17568 | train_ret 0.771 (n=433) | wm nse1 0.0091 nse8 0.0160 | imag_ret 2.754 surv 1.000 | t sim/wm/pi 1.2/8.8/14.6s
+it 44050 | 4.06 h | 1.9 it/s | updates 17588 | train_ret 0.767 (n=456) | wm nse1 0.0091 nse8 0.0155 | imag_ret 2.755 surv 1.000 | t sim/wm/pi 1.2/9.4/14.7s
+it 44100 | 4.07 h | 2.1 it/s | updates 17608 | train_ret 0.769 (n=401) | wm nse1 0.0090 nse8 0.0187 | imag_ret 2.756 surv 1.000 | t sim/wm/pi 1.2/9.5/13.4s
+it 44150 | 4.08 h | 1.9 it/s | updates 17628 | train_ret 0.776 (n=440) | wm nse1 0.0091 nse8 0.0156 | imag_ret 2.747 surv 1.000 | t sim/wm/pi 1.2/9.5/15.0s
+it 44200 | 4.08 h | 2.0 it/s | updates 17648 | train_ret 0.771 (n=410) | wm nse1 0.0091 nse8 0.0168 | imag_ret 2.756 surv 1.000 | t sim/wm/pi 1.2/9.2/14.8s
+it 44250 | 4.09 h | 2.0 it/s | updates 17668 | train_ret 0.778 (n=418) | wm nse1 0.0090 nse8 0.0176 | imag_ret 2.754 surv 0.999 | t sim/wm/pi 1.2/9.4/14.6s
+it 44300 | 4.10 h | 2.1 it/s | updates 17688 | train_ret 0.773 (n=369) | wm nse1 0.0089 nse8 0.0176 | imag_ret 2.748 surv 0.999 | t sim/wm/pi 1.2/9.6/13.2s
+it 44350 | 4.11 h | 2.0 it/s | updates 17708 | train_ret 0.781 (n=401) | wm nse1 0.0090 nse8 0.0170 | imag_ret 2.753 surv 1.000 | t sim/wm/pi 1.2/9.5/14.4s
+it 44400 | 4.11 h | 1.9 it/s | updates 17728 | train_ret 0.765 (n=415) | wm nse1 0.0090 nse8 0.0152 | imag_ret 2.758 surv 0.999 | t sim/wm/pi 1.2/9.6/14.9s
+it 44450 | 4.12 h | 2.0 it/s | updates 17748 | train_ret 0.768 (n=425) | wm nse1 0.0090 nse8 0.0196 | imag_ret 2.758 surv 1.000 | t sim/wm/pi 1.2/9.4/14.9s
+it 44500 | 4.13 h | 2.1 it/s | updates 17768 | train_ret 0.771 (n=450) | wm nse1 0.0089 nse8 0.0155 | imag_ret 2.758 surv 0.999 | t sim/wm/pi 1.2/9.7/13.0s
+it 44550 | 4.13 h | 2.0 it/s | updates 17788 | train_ret 0.757 (n=412) | wm nse1 0.0089 nse8 0.0200 | imag_ret 2.763 surv 1.000 | t sim/wm/pi 1.2/9.2/14.4s
+it 44600 | 4.14 h | 2.0 it/s | updates 17808 | train_ret 0.767 (n=400) | wm nse1 0.0090 nse8 0.0178 | imag_ret 2.754 surv 0.999 | t sim/wm/pi 1.2/9.3/14.4s
+it 44650 | 4.15 h | 2.1 it/s | updates 17828 | train_ret 0.772 (n=435) | wm nse1 0.0090 nse8 0.0170 | imag_ret 2.756 surv 0.999 | t sim/wm/pi 1.2/9.5/13.5s
+it 44700 | 4.15 h | 1.9 it/s | updates 17848 | train_ret 0.773 (n=446) | wm nse1 0.0089 nse8 0.0165 | imag_ret 2.763 surv 1.000 | t sim/wm/pi 1.2/9.3/15.1s
+it 44750 | 4.16 h | 2.0 it/s | updates 17868 | train_ret 0.769 (n=470) | wm nse1 0.0089 nse8 0.0185 | imag_ret 2.751 surv 0.999 | t sim/wm/pi 1.2/9.5/14.6s
+it 44800 | 4.17 h | 2.0 it/s | updates 17888 | train_ret 0.762 (n=419) | wm nse1 0.0090 nse8 0.0166 | imag_ret 2.753 surv 1.000 | t sim/wm/pi 1.2/9.6/14.6s
+it 44850 | 4.17 h | 2.1 it/s | updates 17908 | train_ret 0.774 (n=446) | wm nse1 0.0089 nse8 0.0157 | imag_ret 2.751 surv 1.000 | t sim/wm/pi 1.2/9.4/13.2s
+it 44900 | 4.18 h | 2.0 it/s | updates 17928 | train_ret 0.767 (n=406) | wm nse1 0.0089 nse8 0.0160 | imag_ret 2.756 surv 0.999 | t sim/wm/pi 1.2/9.6/14.7s
+it 44950 | 4.19 h | 1.9 it/s | updates 17948 | train_ret 0.776 (n=418) | wm nse1 0.0089 nse8 0.0144 | imag_ret 2.753 surv 1.000 | t sim/wm/pi 1.3/9.5/15.0s
+it 45000 | 4.20 h | 1.9 it/s | updates 17968 | train_ret 0.775 (n=408) | wm nse1 0.0090 nse8 0.0174 | imag_ret 2.748 surv 0.999 | t sim/wm/pi 1.2/9.6/14.9s
+it 45050 | 4.20 h | 2.1 it/s | updates 17988 | train_ret 0.776 (n=427) | wm nse1 0.0091 nse8 0.0145 | imag_ret 2.750 surv 0.999 | t sim/wm/pi 1.2/9.5/13.2s
+it 45100 | 4.21 h | 2.0 it/s | updates 18008 | train_ret 0.763 (n=446) | wm nse1 0.0089 nse8 0.0221 | imag_ret 2.753 surv 0.999 | t sim/wm/pi 1.2/9.3/14.5s
+it 45150 | 4.22 h | 2.0 it/s | updates 18028 | train_ret 0.770 (n=420) | wm nse1 0.0090 nse8 0.0145 | imag_ret 2.756 surv 0.999 | t sim/wm/pi 1.2/9.6/14.8s
+it 45200 | 4.22 h | 2.0 it/s | updates 18048 | train_ret 0.784 (n=360) | wm nse1 0.0089 nse8 0.0162 | imag_ret 2.740 surv 0.999 | t sim/wm/pi 1.2/9.5/14.8s
+it 45250 | 4.23 h | 2.1 it/s | updates 18068 | train_ret 0.781 (n=402) | wm nse1 0.0090 nse8 0.0159 | imag_ret 2.747 surv 0.999 | t sim/wm/pi 1.2/9.2/13.5s
+it 45300 | 4.24 h | 2.0 it/s | updates 18088 | train_ret 0.768 (n=356) | wm nse1 0.0092 nse8 0.0151 | imag_ret 2.750 surv 0.999 | t sim/wm/pi 1.2/9.6/14.4s
+it 45350 | 4.24 h | 2.0 it/s | updates 18108 | train_ret 0.768 (n=405) | wm nse1 0.0090 nse8 0.0210 | imag_ret 2.762 surv 0.999 | t sim/wm/pi 1.2/9.5/14.6s
+it 45400 | 4.25 h | 2.1 it/s | updates 18128 | train_ret 0.775 (n=391) | wm nse1 0.0089 nse8 0.0154 | imag_ret 2.754 surv 0.999 | t sim/wm/pi 1.2/9.7/13.2s
+it 45450 | 4.26 h | 2.0 it/s | updates 18148 | train_ret 0.762 (n=398) | wm nse1 0.0091 nse8 0.0175 | imag_ret 2.748 surv 0.999 | t sim/wm/pi 1.2/9.4/14.9s
+it 45500 | 4.27 h | 1.9 it/s | updates 18168 | train_ret 0.783 (n=402) | wm nse1 0.0090 nse8 0.0184 | imag_ret 2.755 surv 1.000 | t sim/wm/pi 1.2/9.7/15.1s
+it 45550 | 4.27 h | 2.0 it/s | updates 18188 | train_ret 0.757 (n=486) | wm nse1 0.0088 nse8 0.0176 | imag_ret 2.757 surv 0.999 | t sim/wm/pi 1.2/9.7/14.5s
+it 45600 | 4.28 h | 2.1 it/s | updates 18208 | train_ret 0.747 (n=375) | wm nse1 0.0091 nse8 0.0205 | imag_ret 2.748 surv 0.999 | t sim/wm/pi 1.2/9.6/13.1s
+it 45650 | 4.29 h | 2.0 it/s | updates 18228 | train_ret 0.753 (n=391) | wm nse1 0.0091 nse8 0.0170 | imag_ret 2.733 surv 0.999 | t sim/wm/pi 1.2/9.6/14.7s
+it 45700 | 4.29 h | 2.0 it/s | updates 18248 | train_ret 0.748 (n=383) | wm nse1 0.0093 nse8 0.0177 | imag_ret 2.739 surv 0.999 | t sim/wm/pi 1.2/9.6/14.7s
+it 45750 | 4.30 h | 1.9 it/s | updates 18268 | train_ret 0.752 (n=375) | wm nse1 0.0096 nse8 0.0273 | imag_ret 2.744 surv 0.999 | t sim/wm/pi 1.2/9.4/15.0s
