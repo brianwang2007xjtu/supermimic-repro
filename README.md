@@ -130,7 +130,7 @@ MuJoCo 的离屏渲染依赖 EGL 与 DRM。部分云容器只映射 `/dev/nvidia
 
 ## 数据与权重
 
-- 最终检查点（44,000 次迭代，206 MB）：GitHub Release 附件。
+- 最终检查点（44,000 次迭代，206 MB）：[`v1.0-ckpt44k` Release 附件](https://github.com/brianwang2007xjtu/supermimic-repro/releases/tag/v1.0-ckpt44k)。
 - 40 条动作的演示视频与交互页面：<https://brianwang2007.com/posts/supermimic-repro/>
 - 逐检查点曲线、逐动作评测与 TensorBoard 导出：`results/`
 
