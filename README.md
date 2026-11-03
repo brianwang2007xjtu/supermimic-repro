@@ -2,6 +2,8 @@
 
 **简体中文** | [English](README.en.md)
 
+**English.** This repository reproduces *SuperMimic* (CoRL 2026), which trains a humanoid whole-body tracking policy with a differentiable world model instead of policy gradients through the simulator. The world model is fitted to MuJoCo Warp transitions, and the policy is optimised by short-horizon BPTT over imagined rollouts. Trained on 40 retargeted LAFAN1 motions for 4.3 hours on a single RTX 4090, the final policy reaches a mean normalised return of 0.882 over all clips and 0.886 on the four-motion benchmark. The repository contains the setup, training, evaluation, offline rendering and CPU world-model inference scripts, the logged results, and one example rollout for the offline pipeline. The final checkpoint (44,000 iterations) is attached to the [`v1.0-ckpt44k`](https://github.com/brianwang2007xjtu/supermimic-repro/releases/tag/v1.0-ckpt44k) release.
+
 复现 Liao et al., *SuperMimic: Scaling Humanoid Whole-Body Control with One Differentiable World Model*（CoRL 2026, [arXiv:2610.28480](https://arxiv.org/abs/2610.28480)）。方法用一个可微世界模型替代仿真器内的策略梯度：世界模型拟合 MuJoCo Warp 的转移，策略在想象轨迹上做短视野 BPTT。
 
 本仓库记录在单张 RTX 4090（24 GB）上复现该流程的代码、数据与评测结果。基础实现来自 [CuboiLeo/SuperMimic-Reproduced](https://github.com/CuboiLeo/SuperMimic-Reproduced)（论文口径实现），本仓库补充环境适配、离线渲染管线、世界模型推理与可视化工具。
